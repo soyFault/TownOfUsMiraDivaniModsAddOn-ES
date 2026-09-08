@@ -9,7 +9,7 @@ namespace DivaniMods.Options;
 
 public class SentinelOptions : AbstractRoleOptionGroup<SentinelRole>
 {
-    public override string GroupName => MiraLocaleManager.Get("SentinelRoleName");
+    public override string GroupName => MiraLocaleManager.Get("SentinelRoleName", "Sentinel");
 
     public ModdedNumberOption MaxBeacons { get; } = new(
         MiraLocaleManager.Get("SentinelMaxBeacons"), 3f, 1f, 5f, 1f, MiraNumberSuffixes.None);

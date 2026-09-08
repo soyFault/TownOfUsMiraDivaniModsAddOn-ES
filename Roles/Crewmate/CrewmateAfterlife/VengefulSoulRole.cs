@@ -39,7 +39,7 @@ public sealed class VengefulSoulRole(IntPtr cppPtr)
     public bool CanCatch() => false;
 
     public string LocaleKey => "VengefulSoul";
-    public string RoleName => MiraLocaleManager.Get("VengefulSoulRoleName");
+    public string RoleName => MiraLocaleManager.Get("VengefulSoulRoleName", "Vengeful Soul");
     public string RoleDescription => MiraLocaleManager.Get("VengefulSoulRoleDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("VengefulSoulRoleLongDescription");
 
