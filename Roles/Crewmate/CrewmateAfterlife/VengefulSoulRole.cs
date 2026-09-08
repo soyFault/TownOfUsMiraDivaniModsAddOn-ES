@@ -4,6 +4,7 @@ using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
 using MiraAPI.Patches.Stubs;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using MiraAPI.Utilities;
 using Reactor.Utilities.Extensions;
 using DivaniMods.Assets;
@@ -38,11 +39,9 @@ public sealed class VengefulSoulRole(IntPtr cppPtr)
     public bool CanCatch() => false;
 
     public string LocaleKey => "VengefulSoul";
-    public string RoleName => "Vengeful Soul";
-    public string RoleDescription => "Hunt down your killer!";
-    public string RoleLongDescription =>
-        "You were murdered as the Retributionist and rose as a Vengeful Soul.\n" +
-        "Seek revenge on your killer to return to the ship!";
+    public string RoleName => MiraLocaleManager.Get("VengefulSoulRoleName");
+    public string RoleDescription => MiraLocaleManager.Get("VengefulSoulRoleDescription");
+    public string RoleLongDescription => MiraLocaleManager.Get("VengefulSoulRoleLongDescription");
 
     public string GetAdvancedDescription() => RoleLongDescription + MiscUtils.AppendOptionsText(GetType());
 
@@ -52,7 +51,11 @@ public sealed class VengefulSoulRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Revenge", "Hunt down and kill your killer before your time runs out to get revived.", DivaniAssets.VengefulSoulRevengeButton)
+        new(
+            MiraLocaleManager.Get("VengefulSoulRevenge"),
+            MiraLocaleManager.Get("VengefulSoulRevengeDescription"),
+            DivaniAssets.VengefulSoulRevengeButton
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)

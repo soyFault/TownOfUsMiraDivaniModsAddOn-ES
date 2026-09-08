@@ -20,4 +20,29 @@
     <string name="DivaniNeutralEvilWonSelf">You've reached your goal as [role]!</string>
     <string name="DivaniNeutralEvilTormentFeedback">You may kill one more player before the round continues.</string>
     <string name="DivaniNeutralEvilWonOther">[player] has left in victory as [role]!</string>
+<!-- Roles -->
+<!-- Vengeful Soul -->
+    <string name="VengefulSoulRoleName">Vengeful Soul</string>
+    <string name="VengefulSoulRoleDescription">Hunt down your killer!</string>
+    <string name="VengefulSoulRoleLongDescription">You were murdered as the Retributionist and rose as a Vengeful Soul.
+    Seek revenge on your killer to return to the ship!</string>
+    <string name="VengefulSoulRevenge">Revenge</string>
+    <string name="VengefulSoulRevengeDescription">Hunt down and kill your killer before your time runs out to get revived.</string>
+    <!-- Vengeful Soul Options -->
+<!-- Sentinel -->
+<string name="SentinelRoleName">Sentinel</string>
+<string name="SentinelRoleDescription">Monitor rooms!</string>
+<string name="SentinelRoleLongDescription">Place beacons in rooms to track who
+passes through them.
+During meetings you can see who
+passed through each beacon's room.</string>
+<string name="SentinelPlaceBeacon">Place Beacon</string>
+<string name="SentinelPlaceBeaconDescription">Place a Beacon in a room to monitor its activity</string>
+<!-- Sentinel Options -->
+    <string name="SentinelMaxBeacons">Max Beacons</string>
+    <string name="SentinelPlaceBeaconCooldown">Place Beacon Cooldown</string>
+    <string name="SentinelPlaceBeaconDuration">Place Beacon Duration</string>
+    <string name="SentinelShowRoomActivityInChat">Show Room Activity In Chat</string>
+    <string name="SentinelShowBodiesFoundInBeaconRooms">Show Bodies Found In Beacon Rooms</string>
+    
 </resources>

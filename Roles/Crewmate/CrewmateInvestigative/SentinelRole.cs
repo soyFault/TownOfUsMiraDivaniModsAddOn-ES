@@ -1,6 +1,7 @@
 using Il2CppInterop.Runtime.Attributes;
 using System;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using DivaniMods.Assets;
 using TownOfUs.Extensions;
 using TownOfUs.Modules.Wiki;
@@ -15,10 +16,9 @@ public sealed class SentinelRole(IntPtr cppPtr)
 {
     public static readonly Color SentinelColor = new Color32(244, 169, 60, 255);
 
-    public string RoleName => "Sentinel";
-    public string RoleDescription => "Monitor rooms!";
-    public string RoleLongDescription => "Place beacons in rooms to track who\npasses through them.\n" +
-        "During meetings you can see who\npassed through each beacon's room.";
+    public string RoleName => MiraLocaleManager.Get("SentinelRoleName");
+    public string RoleDescription => MiraLocaleManager.Get("SentinelRoleDescription");
+    public string RoleLongDescription => MiraLocaleManager.Get("SentinelRoleLongDescription");
     public Color RoleColor => SentinelColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateInvestigative;
@@ -29,7 +29,11 @@ public sealed class SentinelRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Place Beacon", "Place a Beacon in a room to monitor it's activity", DivaniAssets.SentinelPlaceBeaconButton)
+        new(
+            MiraLocaleManager.Get("SentinelPlaceBeacon"),
+            MiraLocaleManager.Get("SentinelPlaceBeaconDescription"),
+            DivaniAssets.SentinelPlaceBeaconButton
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)
