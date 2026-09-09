@@ -4,6 +4,7 @@ using AmongUs.GameOptions;
 using MiraAPI.Modifiers;
 using MiraAPI.Patches.Stubs;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using MiraAPI.Utilities;
 using Reactor.Networking.Attributes;
 using DivaniMods.Assets;
@@ -24,11 +25,10 @@ namespace DivaniMods.Roles.Impostor.ImpostorPower;
 public sealed class RecruiterRole(IntPtr cppPtr)
     : ImpostorRole(cppPtr), ITownOfUsRole, IWikiDiscoverable, IDoomable, ICrewVariant
 {
-    public string RoleName => "Recruiter";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Recruiter", "Recruiter");
     public string LocaleKey => "Recruiter";
-    public string RoleDescription => "Pick your partner!";
-    public string RoleLongDescription =>
-        "In any meeting, recruit a non-Impostor to become a Recruit once. The Recruit joins the Impostors and picks a new Impostor role.";
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruiter.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruiter.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;
     public RoleAlignment RoleAlignment => RoleAlignment.ImpostorPower;
@@ -42,8 +42,16 @@ public sealed class RecruiterRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Recruit", "During a meeting, mark one non-Impostor to convert them into a Recruit.", DivaniAssets.RecruitMeetingImpostor),
-        new("Change Role", "If enabled, pick a new Impostor role for yourself after a successful recruit.", TouImpAssets.TraitorSelect)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Recruiter.Ability.Recruit"),
+            MiraLocaleManager.Get("DivaniMods.Role.Recruiter.Ability.Recruit.Description"),
+            DivaniAssets.RecruitMeetingImpostor
+        ),
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Recruiter.Ability.ChangeRole"),
+            MiraLocaleManager.Get("DivaniMods.Role.Recruiter.Ability.ChangeRole.Description"),
+            TouImpAssets.TraitorSelect
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)

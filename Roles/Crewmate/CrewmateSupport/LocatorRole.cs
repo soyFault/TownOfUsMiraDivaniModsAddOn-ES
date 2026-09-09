@@ -3,6 +3,7 @@ using System.Text;
 using Il2CppInterop.Runtime.Attributes;
 using MiraAPI.Roles;
 using MiraAPI.Utilities;
+using MiraAPI.Translation;
 using DivaniMods.Assets;
 using TownOfUs.Assets;
 using TownOfUs.Modules.Wiki;
@@ -21,10 +22,9 @@ public sealed class LocatorRole(IntPtr cppPtr)
     public static int MarksRemaining { get; set; }
     public static int MarksThisRound { get; set; }
 
-    public string RoleName => "Locator";
-    public string RoleDescription => "Tag the noisy ones!";
-    public string RoleLongDescription =>
-        "Mark a player to give them the Noisemaker Modifier until the next meeting.";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Locator", "Locator");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Locator.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Locator.LongDescription");
     public Color RoleColor => LocatorColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateSupport;
@@ -35,7 +35,11 @@ public sealed class LocatorRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Mark", "Mark a player to give them the Noisemaker Modifier until the next meeting.", DivaniAssets.LocatorIcon)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Locator.Ability.Mark"),
+            MiraLocaleManager.Get("DivaniMods.Role.Locator.Ability.Mark.Description"),
+            DivaniAssets.LocatorIcon
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)
@@ -51,7 +55,8 @@ public sealed class LocatorRole(IntPtr cppPtr)
     public StringBuilder SetTabText()
     {
         var stringB = ITownOfUsRole.SetNewTabText(this);
-        stringB.AppendLine($"{RoleColor.ToTextColor()}<b>Marks left: {MarksRemaining}</b></color>");
+        stringB.AppendLine($"{RoleColor.ToTextColor()}<b>{MiraLocaleManager.Get("DivaniMods.Role.Locator.Tab.MarksLeft")
+        .Replace("[count]", MarksRemaining.ToString())}</b></color>");
         return stringB;
     }
 }

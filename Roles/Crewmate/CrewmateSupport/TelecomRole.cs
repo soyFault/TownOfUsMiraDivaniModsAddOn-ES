@@ -6,6 +6,7 @@ using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
 using MiraAPI.Patches.Stubs;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using MiraAPI.Utilities;
 using Reactor.Networking.Attributes;
 using Reactor.Utilities.Extensions;
@@ -33,10 +34,9 @@ public sealed class TelecomRole(IntPtr cppPtr)
 {
     public static readonly Color TelecomColor = new Color32(0x8E, 0xEF, 0xFF, 255);
 
-    public string RoleName => "Telecom";
-    public string RoleDescription => "Spead the word!";
-    public string RoleLongDescription =>
-        "Transmit to a player to open a private chat!";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Telecom", "Telecom");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Telecom.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Telecom.LongDescription");
     public Color RoleColor => TelecomColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateSupport;
@@ -47,7 +47,11 @@ public sealed class TelecomRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Transmission", "Open a private chat with a chosen player.", DivaniAssets.TelecomTransmissionButton)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Telecom.Ability.Transmission"),
+            MiraLocaleManager.Get("DivaniMods.Role.Telecom.Ability.Transmission.Description"),
+            DivaniAssets.TelecomTransmissionButton
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)
@@ -76,12 +80,14 @@ public sealed class TelecomRole(IntPtr cppPtr)
         var target = TargetId != byte.MaxValue ? GameData.Instance.GetPlayerById(TargetId)?.Object : null;
         if (target != null && target.Data != null)
         {
-            sb.AppendLine($"{RoleColor.ToTextColor()}<b>Transmitting: {target.Data.PlayerName}</b></color>");
+            var transmittingText = MiraLocaleManager.Get("DivaniMods.Role.Telecom.Tab.Transmitting")
+                .Replace("[player]", target.Data.PlayerName);
+            sb.AppendLine($"{RoleColor.ToTextColor()}<b>{transmittingText}</b></color>");
         }
         else
         {
-            sb.AppendLine($"{RoleColor.ToTextColor()}<b>No active transmission</b></color>");
-        }
+             sb.AppendLine($"{RoleColor.ToTextColor()}<b>{MiraLocaleManager.Get("DivaniMods.Role.Telecom.Tab.NoActiveTransmission")}</b></color>");
+    }
 
         return sb;
     }
@@ -330,14 +336,20 @@ public sealed class TelecomRole(IntPtr cppPtr)
 
         var hideSender = anonymous && mod.AmTelecom && local != sender;
         var basePlayer = hideSender ? local.Data : sender.Data;
-        var displayName = hideSender ? "Telecom" : sender.Data.PlayerName;
+        var displayName = hideSender
+            ? MiraLocaleManager.Get("DivaniMods.Role.Telecom", "Telecom")
+            : sender.Data.PlayerName;
 
         var chat = HudManager.Instance.Chat;
         var originalSound = chat.messageSound;
         chat.messageSound = SilentClip;
 
-        MiscUtils.AddTeamChat(basePlayer,
-            $"<color=#{TelecomColor.ToHtmlStringRGBA()}>{displayName} (Telecom chat)</color>",
+        var chatName = MiraLocaleManager.Get("DivaniMods.Role.Telecom.Chat.Name")
+            .Replace("[player]", displayName);
+
+        MiscUtils.AddTeamChat(
+            basePlayer,
+            $"<color=#{TelecomColor.ToHtmlStringRGBA()}>{chatName}</color>",
             text, blackoutText: false, bubbleType: BubbleType.None, onLeft: !sender.AmOwner);
 
         chat.messageSound = originalSound;

@@ -4,6 +4,7 @@ using AmongUs.GameOptions;
 using MiraAPI.GameOptions;
 using MiraAPI.Patches.Stubs;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using DivaniMods.Assets;
 using DivaniMods.Interfaces;
 using DivaniMods.Options;
@@ -11,7 +12,6 @@ using TownOfUs;
 using TownOfUs.Assets;
 using TownOfUs.Extensions;
 using TownOfUs.Interfaces;
-using TownOfUs.Modules.Localization;
 using TownOfUs.Modules.Wiki;
 using TownOfUs.Roles.Crewmate;
 using TownOfUs.Roles;
@@ -39,11 +39,9 @@ public sealed class InnocentRole(IntPtr cppPtr)
     public DoomableType DoomHintType => DoomableType.Trickster;
     public RoleBehaviour CrewVariant => RoleManager.Instance.GetRole((RoleTypes)RoleId.Get<EngineerTouRole>());
     public bool CanBeGuessed => true;
-    public string RoleName => "Innocent";
-    public string RoleDescription => "I swear it wasn't me!";
-    public string RoleLongDescription =>
-        "Use Taunt on another player to make them immediately kill you.\n" +
-        "If that player is voted out in the next meeting, you win.";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Innocent", "Innocent");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Innocent.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Innocent.LongDescription");
     public Color RoleColor => InnocentColor;
 
     public LoadableAsset<Sprite> WinIcon => DivaniAssets.InnocentIcon;
@@ -55,7 +53,11 @@ public sealed class InnocentRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Taunt", "Force a player to immediately kill you.You will win if that player is voted out in the next meeting.", TouNeutAssets.JesterHauntSprite)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Innocent.Ability.Taunt"),
+            MiraLocaleManager.Get("DivaniMods.Role.Innocent.Ability.Taunt.Description"),
+            TouNeutAssets.JesterHauntSprite
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)
@@ -76,7 +78,7 @@ public sealed class InnocentRole(IntPtr cppPtr)
         }
 
         var task = PlayerTask.GetOrCreateTask<ImportantTextTask>(playerControl, 0);
-        task.Text = $"{TownOfUsColors.Neutral.ToTextColor()}{TouLocale.GetParsed("NeutralEvilTaskHeader")}</color>";
+        task.Text = $"{TownOfUsColors.Neutral.ToTextColor()}{MiraLocaleManager.Get("NeutralEvilTaskHeader")}</color>";
         task.name = "NeutralRoleText";
     }
 

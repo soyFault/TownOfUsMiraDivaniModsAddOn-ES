@@ -7,6 +7,7 @@ using Il2CppInterop.Runtime.Attributes;
 using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using MiraAPI.Utilities.Assets;
 using Reactor.Networking.Attributes;
 using Reactor.Utilities;
@@ -18,7 +19,7 @@ using DivaniMods.Options;
 using TownOfUs.Assets;
 using TownOfUs.Extensions;
 using TownOfUs.Modules.Anims;
-using TownOfUs.Modules.Localization;
+
 using TownOfUs.Modules.Wiki;
 using TownOfUs.Options;
 using TownOfUs.Roles;
@@ -44,9 +45,9 @@ public sealed class MoleRole(IntPtr cppPtr)
     // Local-only: seconds left before the local player gets kicked out of the mole vent network.
     [HideFromIl2Cpp] public static float VentTimeLeft { get; set; }
 
-    public string RoleName => "Mole";
-    public string RoleDescription => "Dig your own tunnel network!";
-    public string RoleLongDescription => "Dig vents around the map to connect a tunnel network.";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Mole", "Mole");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Mole.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Mole.LongDescription");
     public Color RoleColor => MoleColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateSupport;
@@ -57,7 +58,11 @@ public sealed class MoleRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Dig", "Dig a vent at your current position. All Mole vents connect to each other.", DivaniAssets.MoleDigButton)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Mole.Ability.Dig"),
+            MiraLocaleManager.Get("DivaniMods.Role.Mole.Ability.Dig.Description"),
+            DivaniAssets.MoleDigButton
+    )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)
@@ -324,14 +329,22 @@ public sealed class MoleRole(IntPtr cppPtr)
         var duration = (int)opt.VentRoundDuration;
 
         var lifeText = duration == 0
-            ? "Dug vents last the whole game."
-            : $"Dug vents collapse after {duration} round{(duration == 1 ? string.Empty : "s")}.";
-        stringB.Append($"\n<b><size=60%>Note: {lifeText}</size></b>");
+            ? MiraLocaleManager.Get("DivaniMods.Role.Mole.Tab.VentDuration.Unlimited")
+            : MiraLocaleManager.Get(
+                duration == 1
+                    ? "DivaniMods.Role.Mole.Tab.VentDuration.OneRound"
+                    : "DivaniMods.Role.Mole.Tab.VentDuration.Rounds")
+                .Replace("[rounds]", duration.ToString());
+        stringB.Append(
+            $"\n<b><size=60%>{MiraLocaleManager.Get("DivaniMods.Role.Mole.Tab.Note")
+                .Replace("[text]", lifeText)}</size></b>");
 
         var visText = opt.VentVisibility switch
         {
-            MoleVentVisibility.AfterUse => "Vents stay hidden until first used.",
-            MoleVentVisibility.AfterNextMeeting => "Dug vents only appear after the next meeting.",
+            MoleVentVisibility.AfterUse =>
+                MiraLocaleManager.Get("DivaniMods.Role.Mole.Tab.Visibility.AfterUse"),
+            MoleVentVisibility.AfterNextMeeting =>
+                MiraLocaleManager.Get("DivaniMods.Role.Mole.Tab.Visibility.AfterNextMeeting"),
             _ => string.Empty,
         };
         if (visText != string.Empty)
@@ -346,23 +359,25 @@ public sealed class MoleRole(IntPtr cppPtr)
 
         if (activeVents.Count > 0 || PendingVents.Count > 0)
         {
-            stringB.Append($"\n<b>{TouLocale.GetParsed("TouRolePlumberVentListTabText")}:</b>");
+            stringB.Append($"\n<b>{MiraLocaleManager.Get("TouRolePlumberVentListTabText")}:</b>");
 
             foreach (var vent in activeVents)
             {
-                var ventLabel = TouLocale.GetParsed("TouRolePlumberVentLabelTabText")
-                    .Replace("<roomName>", MiscUtils.GetRoomName(vent.transform.position));
+                var ventLabel = MiraLocaleManager.Get("TouRolePlumberVentLabelTabText")
+                .Replace("<roomName>", MiscUtils.GetRoomName(vent.transform.position));
                 var roundsText = duration != 0 && VentRounds.TryGetValue(vent.Id, out var rounds)
-                    ? $": {TouLocale.GetParsed("TouRolePlumberVentRoundsTabText").Replace("<roundsRemaining>", rounds.ToString())}"
+                    ? $": {MiraLocaleManager.Get("TouRolePlumberVentRoundsTabText")
+                        .Replace("<roundsRemaining>", rounds.ToString())}"
                     : string.Empty;
                 stringB.Append($"\n{ventLabel}{roundsText}");
             }
 
             foreach (var pos in PendingVents)
             {
-                var ventLabel = TouLocale.GetParsed("TouRolePlumberVentLabelTabText")
+                var ventLabel = MiraLocaleManager.Get("TouRolePlumberVentLabelTabText")
                     .Replace("<roomName>", MiscUtils.GetRoomName(pos));
-                var prepText = TouLocale.GetParsed("TouRolePlumberUnbuiltBarricadeTabText");
+
+                var prepText = MiraLocaleManager.Get("TouRolePlumberUnbuiltBarricadeTabText");
                 stringB.Append($"\n<color=#BFBFBF>{ventLabel}: {prepText}</color>");
             }
         }

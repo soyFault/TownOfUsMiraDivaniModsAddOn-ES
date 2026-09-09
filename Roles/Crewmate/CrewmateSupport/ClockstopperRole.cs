@@ -4,11 +4,11 @@ using Il2CppInterop.Runtime.Attributes;
 using MiraAPI.GameOptions;
 using MiraAPI.Roles;
 using MiraAPI.Utilities;
+using MiraAPI.Translation;
 using DivaniMods.Assets;
 using DivaniMods.Events.Crewmate.CrewmateSupport;
 using TownOfUs.Extensions;
 using TownOfUs.Interfaces;
-using TownOfUs.Modules.Localization;
 using TownOfUs.Modules.Wiki;
 using TownOfUs.Options;
 using TownOfUs.Roles;
@@ -23,13 +23,13 @@ namespace DivaniMods.Roles.Crewmate.CrewmateSupport;
 public sealed class ClockstopperRole(IntPtr cppPtr)
     : CrewmateRole(cppPtr), ITownOfUsRole, IWikiDiscoverable, IDoomable, IProgressTally
 {
-    public string RoleName => "Clockstopper";
-    public string RoleDescription => "Reset, Rinse and Repeat!";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Clockstopper", "Clockstopper");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Description");
     public string RoleLongDescription =>
         PlayerControl.LocalPlayer
         && PlayerControl.LocalPlayer.TryGetModifier<AllianceGameModifier>(out var allyMod) && !allyMod.GetsPunished
-            ? "Finish a set amount of tasks to <b>reset the cooldowns of those not on your team!</b>"
-            : "Finish a set amount of tasks to reset cooldowns!";
+            ? MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.LongDescription.Evil")
+            : MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.LongDescription");
     public Color RoleColor => new Color32(175, 138, 162, 255);
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateSupport;
@@ -66,7 +66,7 @@ public sealed class ClockstopperRole(IntPtr cppPtr)
     public string ProgressOnSummaryNormal => Player.TaskInfo();
 
     public string ProgressOnSummaryDetailed =>
-        TouLocale.GetParsed("StatsTaskCount")
+        MiraLocaleManager.Get("StatsTaskCount")
             .Replace("<count>", Player.TaskInfo().Replace("(", "").Replace(")", ""));
 
     [HideFromIl2Cpp]
@@ -74,18 +74,20 @@ public sealed class ClockstopperRole(IntPtr cppPtr)
     {
         var stringB = ITownOfUsRole.SetNewTabText(this);
         stringB.AppendLine(
-            $"{RoleColor.ToTextColor()}<b>Reset cooldown progress: {ClockstopperEvents.GetProgress(Player)} / {ClockstopperEvents.GetNeeded()}</b></color>");
+            $"{RoleColor.ToTextColor()}<b>{MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Tab.ResetProgress")
+            .Replace("[progress]", ClockstopperEvents.GetProgress(Player).ToString())
+            .Replace("[needed]", ClockstopperEvents.GetNeeded().ToString())}</b></color>");
             if (Player.HasModifier<EgotistModifier>())
             {
-                stringB.AppendLine($"<b>Use your resets to sabotage the Crew!</b>");
+                stringB.AppendLine($"<b>{MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Tab.Egotist")}</b>");
             }
             if (Player.IsImpostorAligned())
             {
-                stringB.AppendLine($"<b>Reset Non-Impostor Cooldowns!</b>");
+                stringB.AppendLine($"<b>{MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Tab.Impostor")}</b>");
             }
             if (Player.IsLover())
             {
-                stringB.AppendLine($"<b>Reset all player cooldowns except for your lover's!</b>");
+                stringB.AppendLine($"<b>{MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Tab.Lover")}</b>");
             }
         return stringB;
     }

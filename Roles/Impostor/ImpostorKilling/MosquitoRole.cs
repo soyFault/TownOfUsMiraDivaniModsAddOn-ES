@@ -2,6 +2,7 @@ using Il2CppInterop.Runtime.Attributes;
 using System;
 using MiraAPI.Patches.Stubs;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using DivaniMods.Assets;
 using TownOfUs.Modules.Wiki;
 using TownOfUs.Roles;
@@ -15,12 +16,10 @@ namespace DivaniMods.Roles.Impostor.ImpostorKilling;
 public sealed class MosquitoRole(IntPtr cppPtr)
     : ImpostorRole(cppPtr), ITownOfUsRole, IWikiDiscoverable, IDoomable
 {
-    public string RoleName => "Mosquito";
+   public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Mosquito", "Mosquito");
     public string LocaleKey => "Mosquito";
-    public string RoleDescription => "Bzzzzz..Splat!";
-    public string RoleLongDescription =>
-        "Launch a mosquito that flies to a target and stings it to death.\n" +
-        "Everyone can click/tap the mosquitos to swat them them!";
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Mosquito.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Mosquito.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;
     public RoleAlignment RoleAlignment => RoleAlignment.ImpostorKilling;
@@ -31,7 +30,11 @@ public sealed class MosquitoRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Sting", "Launch a mosquito that flies to a target and stings it to death. The mosquitos can be swatted by clicking/tapping them", DivaniAssets.MosquitoStingButton)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Mosquito.Ability.Sting"),
+            MiraLocaleManager.Get("DivaniMods.Role.Mosquito.Ability.Sting.Description"),
+            DivaniAssets.MosquitoStingButton
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)

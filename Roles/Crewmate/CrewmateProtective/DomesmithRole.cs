@@ -2,6 +2,7 @@ using Il2CppInterop.Runtime.Attributes;
 using System;
 using System.Collections.Generic;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using DivaniMods.Assets;
 using TownOfUs.Extensions;
 using TownOfUs.Modules.Wiki;
@@ -18,13 +19,13 @@ public sealed class DomesmithRole(IntPtr cppPtr)
 {
     public static readonly Color DomesmithColor = new Color32(0x0E, 0xAA, 0xC3, 255);
 
-    public string RoleName => "Domesmith";
-    public string RoleDescription => "Shield the group!";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Domesmith", "Domesmith");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Domesmith.Description");
     public string RoleLongDescription =>
         PlayerControl.LocalPlayer
         && PlayerControl.LocalPlayer.TryGetModifier<AllianceGameModifier>(out var allyMod) && !allyMod.GetsPunished
-            ? "Drop protective domes on the ground to <b>protect evils!</b>"
-            : "Drop protective domes on the ground to protect the group!";
+            ? MiraLocaleManager.Get("DivaniMods.Role.Domesmith.LongDescription.Evil")
+            : MiraLocaleManager.Get("DivaniMods.Role.Domesmith.LongDescription");
     
     public Color RoleColor => DomesmithColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
@@ -36,7 +37,10 @@ public sealed class DomesmithRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Place Dome", "Drop a dome to protect players inside from kills.", DivaniAssets.DomesmithPlaceDomeButton)
+        new(MiraLocaleManager.Get("DivaniMods.Role.Domesmith.Ability.PlaceDome"),
+            MiraLocaleManager.Get("DivaniMods.Role.Domesmith.Ability.PlaceDome.Description"),
+            DivaniAssets.DomesmithPlaceDomeButton
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)

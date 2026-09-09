@@ -5,6 +5,7 @@ using MiraAPI.Modifiers;
 using MiraAPI.Patches.Hud;
 using MiraAPI.Patches.Stubs;
 using MiraAPI.Roles;
+using MiraAPI.Translation;
 using MiraAPI.Utilities;
 using DivaniMods.Assets;
 using DivaniMods.Modifiers.Impostor;
@@ -26,10 +27,9 @@ public sealed class RecruitRole(IntPtr cppPtr)
         (int)recruiter.GetCount()! > 0 && (int)recruiter.GetChance()! > 0;
 
     public string LocaleKey => "Recruit";
-    public string RoleName => "Recruit";
-    public string RoleDescription => "You were recruited! Pick your new role.";
-    public string RoleLongDescription =>
-        "The Recruiter converted you into an Impostor. Use the Change Role button to pick one of three Impostor roles.";
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Recruit", "Recruit");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruit.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruit.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;
     public RoleAlignment RoleAlignment => RoleAlignment.ImpostorPower;
@@ -46,7 +46,11 @@ public sealed class RecruitRole(IntPtr cppPtr)
 
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
-        new("Change Role", "Choose one of three random Impostor roles to become.", TouImpAssets.TraitorSelect)
+        new(
+            MiraLocaleManager.Get("DivaniMods.Role.Recruit.Ability.ChangeRole"),
+            MiraLocaleManager.Get("DivaniMods.Role.Recruit.Ability.ChangeRole.Description"),
+            TouImpAssets.TraitorSelect
+        )
     ];
 
     public CustomRoleConfiguration Configuration => new(this)
