@@ -439,5 +439,37 @@
     <string name="DivaniMods.Modifier.Shuffle.Ability.Shuffle">Shuffle</string>
     <string name="DivaniMods.Modifier.Shuffle.Ability.Shuffle.Description">Teleport every living player to a random other player's position.</string>
     <!-- Shuffle Options -->
+<!-- Tactical Insertion -->
+    <string name="DivaniMods.Modifier.TacticalInsertion">Tactical Insertion</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.IntroInfo">Mark a spot, respawn there after the next meeting!</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.Description">Mark your current position. After the next meeting you respawn at the marked spot.</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.AdvancedDescription">Mark your current position. After the next meeting you respawn at the marked spot instead of the meeting area.</string>
+
+    <string name="DivaniMods.Modifier.TacticalInsertion.Ability">Tactical Insertion</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Description">Mark your current position to respawn there after the next meeting.</string>
+
+    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">You spawned at the location of your Tactical Insertion</string>
+    <!-- Tactical Insertion Options -->
+<!-- UAV Active -->
+    <string name="DivaniMods.Modifier.UAVActive">UAV Active</string>
+<!-- UAV -->
+    <string name="DivaniMods.Modifier.UAV">UAV</string>
+    <string name="DivaniMods.Modifier.UAV.IntroInfo">Call in a UAV to reveal everyone on the map!</string>
+    <string name="DivaniMods.Modifier.UAV.Description">Call in a UAV: while active, open the map to see everyone walking around.</string>
+    <string name="DivaniMods.Modifier.UAV.Ability.CallUAV">Call UAV</string>
+    <string name="DivaniMods.Modifier.UAV.Ability.CallUAV.Description">Call in a UAV to see your shipmates' locations.</string>
+    <!-- UAV Options -->
+<!-- Recruit & Recruiter-->
+    <string name="DivaniMods.Modifier.RecruitCache">Recruit</string>
+    <string name="DivaniMods.Modifier.RecruiterCache">Recruiter</string>
+<!-- Cupid Lover Reveal -->
+    <string name="DivaniMods.Modifier.CupidLoverReveal">Cupid Lover Reveal</string>
+<!-- Cupid Protect -->
+    <string name="DivaniMods.Modifier.CupidProtect">Protected</string>
+    <string name="DivaniMods.Modifier.CupidProtect.ShieldDescription">You are protected by Cupid!&#10;You cannot be killed.</string>
+<!-- Plague Infected -->
+    <string name="DivaniMods.Modifier.PlagueInfected">Plague Infected</string>
+<!-- Watched -->
+    <string name="DivaniMods.Modifier.WatcherWatched">Watched</string>
 
 </resources>
