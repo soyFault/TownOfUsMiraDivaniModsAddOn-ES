@@ -1,5 +1,5 @@
 <resources>
-<!-- Death Reasons -->
+<!-- Causes of Death -->
     <string name="DiedToSilencer">Silenced</string>
     <string name="DiedToDeadlock">Deadlocked</string>
     <string name="DiedToRecruiter">Recruited</string>
@@ -213,7 +213,7 @@
     <string name="DivaniMods.Role.Deadlock.Ability.Lockdown">Lockdown</string>
     <string name="DivaniMods.Role.Deadlock.Ability.Lockdown.Description">Temporarily disable all crewmate tasks.</string>
     <!-- Deadlock Options -->
-<!-- IMPOSTORS --> 
+<!-- IMPOSTORS -->
 <!-- Cupid -->
     <string name="DivaniMods.Role.Cupid">Cupid</string>
     <string name="DivaniMods.Role.Cupid.Description">Spread the love!</string>
@@ -320,7 +320,124 @@
     <string name="DivaniMods.Role.Duelist.Tab.DuelsLost">Duels lost ([losses]/[needed])</string>
     <!-- Duelist Options -->
 <!-- MODIFIERS -->
+<!-- CREWMATE -->
 <!-- Cursed -->
     <string name="DivaniMods.Modifier.Cursed">Cursed</string>
     <!-- Cursed Options -->
+<!-- Revenge -->
+    <string name="DivaniMods.Modifier.Revenge">Revenge</string>
+    <string name="DivaniMods.Modifier.Revenge.Time">[seconds]s</string>
+    <string name="DivaniMods.Modifier.Revenge.Timer">Revenge: [time]</string>
+    <!-- Revenge Options -->
+<!-- Illusion -->
+    <string name="DivaniMods.Modifier.Illusion">Swooped</string>
+    <string name="DivaniMods.Modifier.Illusion.Notification">A Mage has cloaked you in an Illusion, hiding you from killers!</string>
+    <string name="DivaniMods.Modifier.Illusion.Timer">Cloaking</string>
+    <!-- Illusion Options -->
+<!-- Shock Shield -->
+    <string name="DivaniMods.Modifier.ShockShield">Shock Shield</string>
+    <!-- Shock Shield Options -->
+<!-- Task List Two -->
+    <string name="DivaniMods.Modifier.TaskListTwo">Task List Two</string>
+    <!-- Task List Two Options -->
+<!-- Locator Mark -->
+    <string name="DivaniMods.Modifier.LocatorMark">Noisemaker</string>
+    <string name="DivaniMods.Modifier.LocatorMark.Notification">The Locator marked you as Noisemaker</string>
+    <!-- Locator Mark Options -->
+<!-- Bloody Footsteps -->
+    <string name="DivaniMods.Modifier.BloodyFootsteps">Bloody Footsteps</string>
+    <!-- Bloody Footsteps Options -->
+<!-- GAME -->
+<!-- Betrayer -->
+    <string name="DivaniMods.Modifier.Betrayer">Betrayer</string>
+    <string name="DivaniMods.Modifier.Betrayer.IntroInfo">Ditch the knife for a wand</string>
+    <string name="DivaniMods.Modifier.Betrayer.ShortName">Bet</string>
+    <string name="DivaniMods.Modifier.Betrayer.Description">You no longer win with the Impostors.&#10;Outlive them and every other killer,&#10;then finish off the rest to win alone.</string>
+    <string name="DivaniMods.Modifier.Betrayer.AdvancedDescription">The Betrayer is an Impostor that has turned on their own team. They win like a Neutral Killer: they must be the last killer alive and reach kill majority. The Impostors cannot win by majority while a Betrayer lives, and the Betrayer can kill fellow Impostors.</string>
+    <!-- Betrayer Options -->
+<!-- Betrayer Revealed -->
+    <string name="DivaniMods.Modifier.BetrayerRevealed">Betrayer Revealed</string>
+    <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Revealed">The Impostors are aware of your whereabouts as the &lt;color=[color]&gt;Betrayer&lt;/color&gt;. Stay on your toes!</string>
+    <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Impostors">[player] has been betraying you all along, kill the &lt;color=[color]&gt;Betrayer&lt;/color&gt; before your victory is stolen!</string>
+<!-- Bear Trap -->
+    <string name="DivaniMods.Modifier.BearTrap">Bear Trap</string>
+    <string name="DivaniMods.Modifier.BearTrap.IntroInfo">Trap your killer upon death.</string>
+    <string name="DivaniMods.Modifier.BearTrap.Description">When you are killed, your killer is frozen for [seconds] seconds and cannot report your body.</string>
+    <!-- Bear Trap Options -->
+<!-- Blindspot -->
+    <string name="DivaniMods.Modifier.Blindspot">Blindspot</string>
+    <string name="DivaniMods.Modifier.Blindspot.IntroInfo">You watch camera's without lights.</string>
+    <string name="DivaniMods.Modifier.Blindspot.Description">Camera lights don't activate when you use cameras.</string>
+<!-- Bloody -->
+    <string name="DivaniMods.Modifier.Bloody">Bloody</string>
+    <string name="DivaniMods.Modifier.Bloody.IntroInfo">Your killer leaves red footprints upon death.</string>
+    <string name="DivaniMods.Modifier.Bloody.Description">When you are killed, your killer leaves red footprints for a short period of time.</string>
+    <!-- Bloody Options -->
+<!-- Incompetent -->
+    <string name="DivaniMods.Modifier.Incompetent">Incompetent</string>
+    <string name="DivaniMods.Modifier.Incompetent.IntroInfo">You cannot fix sabotages.</string>
+    <string name="DivaniMods.Modifier.Incompetent.Description">You are unable to fix sabotages. Sabotage consoles won't light up or work for you.</string>
+    <!-- Incompetent Options -->
+<!-- Skilled -->
+    <string name="DivaniMods.Modifier.Skilled">Skilled</string>
+    <string name="DivaniMods.Modifier.Skilled.IntroInfo">You can fix two-part sabotages alone.</string>
+    <string name="DivaniMods.Modifier.Skilled.Description">You can fix two-part sabotages on your own!</string>
+    <!-- Skilled Options -->
+<!-- Sprout -->
+    <string name="DivaniMods.Modifier.Sprout">Sprout</string>
+    <string name="DivaniMods.Modifier.Sprout.IntroInfo">Collect a modifier from a dead body.</string>
+    <string name="DivaniMods.Modifier.Sprout.Description">Use Collect near a dead body to gain one random modifier that player had. One time use.</string>
+    <string name="DivaniMods.Modifier.Sprout.Ability.Collect">Collect</string>
+    <string name="DivaniMods.Modifier.Sprout.Ability.Collect.Description">Use near a dead body to gain one random modifier that player had.</string>
+    <!-- Sprout Options -->
+<!-- Strong -->
+    <string name="DivaniMods.Modifier.Strong">Strong</string>
+    <string name="DivaniMods.Modifier.Strong.IntroInfo">You cannot be guessed in meetings.</string>
+    <string name="DivaniMods.Modifier.Strong.Description">You cannot be guessed in meetings.</string>
+    <!-- Strong Options -->
+<!-- Nullified -->
+    <string name="DivaniMods.Modifier.Nullified">Nullified</string>
+    <string name="DivaniMods.Modifier.Nullified.IntroInfo">You are immune to kill debuffs.</string>
+    <string name="DivaniMods.Modifier.Nullified.Description">You are immune to kill debuffs (Bait, Frosty, Diseased, Bloody, Aftermath, Noisemaker, Bear Trap).</string>
+    <string name="DivaniMods.Modifier.Nullified.Description.SilencesCelebrity">Killing a Celebrity does not announce their death.</string>
+    <!-- Nullified Options -->
+<!-- Ruthless -->
+    <string name="DivaniMods.Modifier.Ruthless">Ruthless</string>
+    <string name="DivaniMods.Modifier.Ruthless.IntroInfo">Your kills bypass shields.</string>
+    <string name="DivaniMods.Modifier.Ruthless.Description">Your kills bypass shields. With Veteran an Shock Shield both die</string>
+    <!-- Ruthless Options -->
+<!-- Sniper -->
+    <string name="DivaniMods.Modifier.Sniper">Sniper</string>
+    <string name="DivaniMods.Modifier.Sniper.IntroInfo">You have increased kill range.</string>
+    <string name="DivaniMods.Modifier.Sniper.Description">Kill without teleporting. Kill range is multiplied by [multiplier]x, up to long kill distance.</string>
+<!-- Armored -->
+    <string name="DivaniMods.Modifier.Armored">Armored</string>
+    <string name="DivaniMods.Modifier.Armored.IntroInfo">You survive a number of attacks.</string>
+    <string name="DivaniMods.Modifier.Armored.Description.Singular">You survive [max] attack.&#10;Survived attacks [survived] / [max]</string>
+    <string name="DivaniMods.Modifier.Armored.Description.Plural">You survive [max] attacks.&#10;Survived attacks [survived] / [max]</string>
+    <!-- Armored Options -->
+<!-- Fragile -->
+    <string name="DivaniMods.Modifier.Fragile">Fragile</string>
+    <string name="DivaniMods.Modifier.Fragile.IntroInfo">You have a chance to break if someone interacts...</string>
+    <string name="DivaniMods.Modifier.Fragile.Description">You have a [chance]% chance to break if any player interacts with you!</string>
+    <!-- Fragile Options -->
+<!-- Memento -->
+    <string name="DivaniMods.Modifier.Memento">Memento</string>
+    <string name="DivaniMods.Modifier.Memento.IntroInfo">Your role is revealed to everyone in meetings upon death.</string>
+    <string name="DivaniMods.Modifier.Memento.Description">When you die, your role is revealed to everyone in meetings for the rest of the game.</string>
+    <!-- Memento Options -->
+<!-- Misvote -->
+    <string name="DivaniMods.Modifier.Misvote">Misvote</string>
+    <string name="DivaniMods.Modifier.Misvote.IntroInfo">Your vote is random every meeting.</string>
+    <string name="DivaniMods.Modifier.Misvote.Description">Your vote is random every meeting. You vote normally, but the vote(s) - even a Skip - are transferred to a random players each meeting.</string>
+    <!-- Misvote Options -->
+<!-- Shuffle -->
+    <string name="DivaniMods.Modifier.Shuffle">Shuffle</string>
+    <string name="DivaniMods.Modifier.Shuffle.IntroInfo">Shuffle all players' positions!</string>
+    <string name="DivaniMods.Modifier.Shuffle.Description">Shuffle all players' positions! ([uses] uses left)</string>
+    <string name="DivaniMods.Modifier.Shuffle.AdvancedDescription">Shuffle all players' positions!</string>
+    <string name="DivaniMods.Modifier.Shuffle.Ability.Shuffle">Shuffle</string>
+    <string name="DivaniMods.Modifier.Shuffle.Ability.Shuffle.Description">Teleport every living player to a random other player's position.</string>
+    <!-- Shuffle Options -->
+
 </resources>
