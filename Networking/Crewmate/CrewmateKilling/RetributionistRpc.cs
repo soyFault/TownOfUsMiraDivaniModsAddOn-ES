@@ -3,6 +3,7 @@ using MiraAPI.GameOptions;
 using MiraAPI.Modifiers;
 using MiraAPI.Roles;
 using MiraAPI.Utilities;
+using MiraAPI.Translation;
 using Reactor.Networking.Attributes;
 using Reactor.Networking.Rpc;
 using Reactor.Utilities;
@@ -17,7 +18,6 @@ using TownOfUs.Modifiers;
 using TownOfUs.Modifiers.Game.Alliance;
 using TownOfUs.Options.Modifiers.Alliance;
 using TownOfUs.Modules;
-using TownOfUs.Modules.Localization;
 using TownOfUs.Utilities;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -119,7 +119,7 @@ public static class RetributionistRpc
             cause,
             roundOfDeath: TownOfUs.Modules.Components.HudManagerHelper.Instance.CurrentRound,
             diedThisRound: TownOfUs.Modules.DeathHandlerOverride.SetTrue,   
-            killedBy: TouLocale.GetParsed("DiedByStringBasic").Replace("<player>", soul.Data.PlayerName),
+            killedBy: MiraLocaleManager.Get("DiedByStringBasic").Replace("<player>", soul.Data.PlayerName),
             lockInfo: TownOfUs.Modules.DeathHandlerOverride.SetTrue);
 
 

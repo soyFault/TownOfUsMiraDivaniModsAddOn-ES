@@ -362,6 +362,7 @@
     <string name="DivaniMods.Role.Cupid.Notification.YouAreInLove">You are now in love with [player]!</string>
     <string name="DivaniMods.Role.Cupid.Tab.ProvisionalLovers">Provisional lovers:</string>
     <string name="DivaniMods.Role.Cupid.Tab.Lovers">Lovers</string>
+    <string name="DivaniMods.Role.Cupid.Notification.RevivedWithLovers">Your Lovers were revived. You returned to the ship!</string>
     <!-- Cupid Options -->
     <string name="DivaniMods.Options.Cupid.MatchmakeCooldown">Matchmake Cooldown</string>
     <string name="DivaniMods.Options.Cupid.ProtectCooldown">Bestow Cooldown</string>
@@ -512,6 +513,17 @@
     <string name="DivaniMods.Role.Thief.Ability.Pickpocket.Description">Steal a modifier from a nearby player. You can only target players who have a modifier to steal. Trying to steal a modifier you cannot use will give you a random modifier instead.</string>
     <string name="DivaniMods.Role.Thief.Ability.Kill">Kill</string>
     <string name="DivaniMods.Role.Thief.Ability.Kill.Description">Kill a nearby player.</string>
+    <string name="DivaniMods.Role.Thief.Notification.UnknownTarget">them</string>
+    <string name="DivaniMods.Role.Thief.Notification.Pickpocketing">Pickpocketing [player] in [seconds]s...</string>
+    <string name="DivaniMods.Role.Thief.Notification.ModifierStolenFromYou">Your [modifier] modifier was stolen!</string>
+    <string name="DivaniMods.Role.Thief.Notification.ModifiersStolenFromYou">Your [modifier] modifiers were stolen!</string>  
+    <string name="DivaniMods.Role.Thief.Notification.NowInLove">You are now in love with [player]!</string>
+    <string name="DivaniMods.Role.Thief.Notification.StoleLover">Stole Lover! You are now in love with [player]!</string>
+    <string name="DivaniMods.Role.Thief.Notification.StoleModifier">Stole/Gained [modifier]!</string>
+    <string name="DivaniMods.Role.Thief.Notification.StoleFrag">You stole the Frag!</string>
+    <string name="DivaniMods.Role.Thief.Notification.FragStolen">Your Frag was stolen by the Thief!</string>
+    <string name="DivaniMods.Role.Thief.Notification.NoModifiersAvailable">No new modifiers available!</string>
+    <string name="DivaniMods.Role.Thief.Notification.StoleOrGainedModifier">Stole/Gained [modifier]!</string>
     <!-- Thief Options -->
     <string name="DivaniMods.Options.Thief.MaxStolenModifiers">Max Stolen Modifiers</string>
     <string name="DivaniMods.Options.Thief.KillCooldown">Kill Cooldown</string>
@@ -554,6 +566,7 @@
 <!-- Duelist -->
     <string name="DivaniMods.Role.Duelist">Duelist</string>
     <string name="DivaniMods.Role.Duelist.Description">ITS TIME TO D-D-D-DUEL</string>
+    <string name="DivaniMods.Role.Duelist.MedDescription">Challenge players to duels and win enough of them to claim victory.</string>
     <string name="DivaniMods.Role.Duelist.LongDescription">Challenge a player to a duel.&#10;Win enough duels to claim victory.</string>
     <string name="DivaniMods.Role.Duelist.Ability.Duel">Duel</string>
     <string name="DivaniMods.Role.Duelist.Ability.Duel.Description">Challenge a shipmate to a duel.</string>
@@ -562,6 +575,8 @@
     <string name="DivaniMods.Role.Duelist.Progress.Detailed">Duels won: [wins]/[winsNeeded] | Duels lost: [losses]/[lossesNeeded]</string>
     <string name="DivaniMods.Role.Duelist.Tab.DuelsWon">Duels won ([wins]/[needed])</string>
     <string name="DivaniMods.Role.Duelist.Tab.DuelsLost">Duels lost ([losses]/[needed])</string>
+    <string name="DivaniMods.Role.Duelist.Notification.YouWon">¡Ganaste como Duelista al conseguir suficientes victorias!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.PlayerWon">¡El Duelista, [player], ganó tras conseguir suficientes victorias!</string>
     <!-- Duelist Options -->
     <string name="DivaniMods.Options.Duelist.DuelCooldown">Duel Cooldown</string>
     <string name="DivaniMods.Options.Duelist.DuelSpeed">Duel Speed Boost</string>

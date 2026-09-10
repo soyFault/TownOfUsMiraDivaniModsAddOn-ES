@@ -31,6 +31,7 @@ public sealed class DuelistRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Duelist", "Duelist");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Duelist.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Duelist.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Duelist.LongDescription");
     public Color RoleColor => DuelistColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Custom;
