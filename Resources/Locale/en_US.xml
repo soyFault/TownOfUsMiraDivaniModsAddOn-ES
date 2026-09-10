@@ -33,10 +33,7 @@
 <!-- Sentinel -->
     <string name="DivaniMods.Role.Sentinel">Sentinel</string>
     <string name="DivaniMods.Role.Sentinel.Description">Monitor rooms!</string>
-<<<<<<< Updated upstream
     <string name="DivaniMods.Role.Sentinel.MedDescription">Place a Beacon in a room to monitor its activity</string>
-=======
->>>>>>> Stashed changes
     <string name="DivaniMods.Role.Sentinel.LongDescription">Place beacons in rooms to track who&#10;passes through them.&#10;During meetings you can see who&#10;passed through each beacon's room.</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon">Place Beacon</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description">Place a Beacon in a room to monitor its activity</string>
@@ -49,6 +46,7 @@
 <!-- Retributionist -->
     <string name="DivaniMods.Role.Retributionist">Retributionist</string>
     <string name="DivaniMods.Role.Retributionist.Description">Seek revenge on your killer!</string>
+    <string name="DivaniMods.Role.Retributionist.MedDescription">Return as a Vengeful Soul after death and take revenge on your killer to revive.</string>
     <string name="DivaniMods.Role.Retributionist.LongDescription">When you die, you get to seek revenge on your killer</string>
     <string name="DivaniMods.Role.Retributionist.AdvancedDescription">When you get killed, you spawn on a random vent as the Vengeful Soul and you get a limited time to find and kill your killer. If you succeed, you get to live again. If you fail, you become a normal ghost. Your killer cannot vent or use their ability if they're an Impostor Concealing role.</string>
     <!-- Retributionist Options -->
@@ -66,6 +64,7 @@
 <!-- Mage -->
     <string name="DivaniMods.Role.Mage">Mage</string>
     <string name="DivaniMods.Role.Mage.Description">Cast spells to aid your team!</string>
+    <string name="DivaniMods.Role.Mage.MedDescription">Cast spells to protect your allies and weaken your enemies.</string>
     <string name="DivaniMods.Role.Mage.LongDescription">Use your knowledge of magic to help the crew and weaken the impostors</string>
     <string name="DivaniMods.Role.Mage.LongDescription.Crewpostor">Use your knowledge of magic to help the impostors and weaken the crew</string>
     <string name="DivaniMods.Role.Mage.LongDescription.Egotist">Use your knowledge of magic to help the killers and weaken the crew</string>
@@ -107,6 +106,7 @@
 <!-- Workhorse -->
     <string name="DivaniMods.Role.Workhorse">Workhorse</string>
     <string name="DivaniMods.Role.Workhorse.Description">Task. Overwork. Win.</string>
+    <string name="DivaniMods.Role.Workhorse.MedDescription">Complete a second task list to help your team and expose your opponents.</string>
     <string name="DivaniMods.Role.Workhorse.LongDescription">Gain an extra set of tasks after completing your original list.
     Finish these extra tasks to result in a task win.</string>
     <string name="DivaniMods.Role.Workhorse.Notification.SecondList">Your work is not done. A second task list awaits!</string>
@@ -125,6 +125,7 @@
 <!-- Domesmith -->
     <string name="DivaniMods.Role.Domesmith">Domesmith</string>
     <string name="DivaniMods.Role.Domesmith.Description">Shield the group!</string>
+    <string name="DivaniMods.Role.Domesmith.MedDescription">Place protective domes around the map to shield players inside.</string>
     <string name="DivaniMods.Role.Domesmith.LongDescription">Drop protective domes on the ground to protect the group!</string>
     <string name="DivaniMods.Role.Domesmith.LongDescription.Evil">Drop protective domes on the ground to &lt;b&gt;protect evils!&lt;/b&gt;</string>
     <string name="DivaniMods.Role.Domesmith.Ability.PlaceDome">Place Dome</string>
@@ -141,6 +142,7 @@
 <!-- Clockstopper -->
     <string name="DivaniMods.Role.Clockstopper">Clockstopper</string>
     <string name="DivaniMods.Role.Clockstopper.Description">Reset, Rinse and Repeat!</string>
+    <string name="DivaniMods.Role.Clockstopper.MedDescription">Complete tasks to reset the round timer and give your team more time.</string>
     <string name="DivaniMods.Role.Clockstopper.LongDescription">Finish a set amount of tasks to reset cooldowns!</string>
     <string name="DivaniMods.Role.Clockstopper.LongDescription.Evil">Finish a set amount of tasks to &lt;b&gt;reset the cooldowns of those not on your team!&lt;/b&gt;</string>
     <string name="DivaniMods.Role.Clockstopper.Tab.ResetProgress">Reset cooldown progress: [progress] / [needed]</string>
@@ -156,6 +158,7 @@
 <!-- Locator -->
     <string name="DivaniMods.Role.Locator">Locator</string>
     <string name="DivaniMods.Role.Locator.Description">Tag the noisy ones!</string>
+    <string name="DivaniMods.Role.Locator.MedDescription">Mark players as Noisemakers until the next meeting.</string>
     <string name="DivaniMods.Role.Locator.LongDescription">Mark a player to give them the Noisemaker Modifier until the next meeting.</string>
     <string name="DivaniMods.Role.Locator.Ability.Mark">Mark</string>
     <string name="DivaniMods.Role.Locator.Ability.Mark.Description">Mark a player to give them the Noisemaker Modifier until the next meeting.</string>
@@ -169,6 +172,7 @@
 <!-- Mole -->
     <string name="DivaniMods.Role.Mole">Mole</string>
     <string name="DivaniMods.Role.Mole.Description">Dig your own tunnel network!</string>
+    <string name="DivaniMods.Role.Mole.MedDescription">Dig vents around the map to connect a tunnel network.</string>
     <string name="DivaniMods.Role.Mole.LongDescription">Dig vents around the map to connect a tunnel network.</string>
     <string name="DivaniMods.Role.Mole.Ability.Dig">Dig</string>
     <string name="DivaniMods.Role.Mole.Ability.Dig.Description">Dig a vent at your current position. All Mole vents connect to each other.</string>
@@ -201,6 +205,7 @@
 <!-- Portalmaker -->
     <string name="DivaniMods.Role.Portalmaker">Portalmaker</string>
     <string name="DivaniMods.Role.Portalmaker.Description">From here, to there!</string>
+    <string name="DivaniMods.Role.Portalmaker.MedDescription">Place portals to quickly travel across the map.</string>
     <string name="DivaniMods.Role.Portalmaker.LongDescription">Place two portals on the map. Once both portals are placed, anyone can use them to teleport between the two locations.</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.PlacePortal">Place Portal</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.PlacePortal.Description">Place a portal on the ground. Place two to open a route.</string>
@@ -215,6 +220,7 @@
 <!-- Telecom -->
     <string name="DivaniMods.Role.Telecom">Telecom</string>
     <string name="DivaniMods.Role.Telecom.Description">Spread the word!</string>
+    <string name="DivaniMods.Role.Telecom.MedDescription">Establish a private communication channel with another player.</string>
     <string name="DivaniMods.Role.Telecom.LongDescription">Transmit to a player to open a private chat!</string>
     <string name="DivaniMods.Role.Telecom.Ability.Transmission">Transmission</string>
     <string name="DivaniMods.Role.Telecom.Ability.Transmission.Description">Open a private chat with a chosen player.</string>
@@ -232,10 +238,12 @@
 <!-- Revenant -->
     <string name="DivaniMods.Role.Revenant">Revenant</string>
     <string name="DivaniMods.Role.Revenant.Description">Kill for the Impostors from beyond the grave.</string>
+    <string name="DivaniMods.Role.Revenant.MedDescription">Rise from the dead to aid the Impostors, but avoid being caught.</string>
     <string name="DivaniMods.Role.Revenant.LongDescription">You were summoned as the Impostor afterlife Revenant. Kill and vent! Anyone can click you to put you to rest.&#10;You will be put to rest in the final four</string>
 <!-- Cunctator -->
     <string name="DivaniMods.Role.Cunctator">Cunctator</string>
     <string name="DivaniMods.Role.Cunctator.Description">Delay Bodies!</string>
+    <string name="DivaniMods.Role.Cunctator.MedDescription">Bodies of those you kill only appear after a delay.</string>
     <string name="DivaniMods.Role.Cunctator.LongDescription">Bodies of those you kill only appear after a delay.</string>
     <string name="DivaniMods.Role.Cunctator.Advanced.BodyDelay">Bodies appear after [seconds]s.</string>
     <!-- Cunctator Options -->
@@ -243,6 +251,7 @@
 <!-- Mosquito -->
     <string name="DivaniMods.Role.Mosquito">Mosquito</string>
     <string name="DivaniMods.Role.Mosquito.Description">Bzzzzz..Splat!</string>
+    <string name="DivaniMods.Role.Mosquito.MedDescription">Send deadly mosquitos after your targets, but beware: anyone can swat them.</string>
     <string name="DivaniMods.Role.Mosquito.LongDescription">Launch a mosquito that flies to a target and stings it to death.&#10;Everyone can click/tap the mosquitos to swat them!</string>
     <string name="DivaniMods.Role.Mosquito.Ability.Sting">Sting</string>
     <string name="DivaniMods.Role.Mosquito.Ability.Sting.Description">Launch a mosquito that flies to a target and stings it to death. The mosquitos can be swatted by clicking/tapping them</string>
@@ -257,6 +266,7 @@
 <!-- Silencer -->
     <string name="DivaniMods.Role.Silencer">Silencer</string>
     <string name="DivaniMods.Role.Silencer.Description">Cut meeting time!</string>
+    <string name="DivaniMods.Role.Silencer.MedDescription">Shorten the voting time of every meeting with each kill.</string>
     <string name="DivaniMods.Role.Silencer.LongDescription">Each kill you make shaves seconds&#10;off the voting time of every meeting for the rest of the game.</string>
     <!-- Silencer Options -->
     <string name="DivaniMods.Options.Silencer.SecondsPerKill">Seconds Cut Per Kill</string>
@@ -265,6 +275,7 @@
 <!-- Obfuscator -->
     <string name="DivaniMods.Role.Obfuscator">Obfuscator</string>
     <string name="DivaniMods.Role.Obfuscator.Description">Transfer votes to rig crewmates!</string>
+    <string name="DivaniMods.Role.Obfuscator.MedDescription">Swap the votes of two players during meetings to manipulate the outcome.</string>
     <string name="DivaniMods.Role.Obfuscator.LongDescription">Transfer votes between Unsuspecting Crewmates. Always goes after regular Swapper</string>
     <string name="DivaniMods.Role.Obfuscator.Ability.TransferVotes">Transfer Votes</string>
     <string name="DivaniMods.Role.Obfuscator.Ability.TransferVotes.Description">Select two players in a meeting that will swap votes at the end.</string>

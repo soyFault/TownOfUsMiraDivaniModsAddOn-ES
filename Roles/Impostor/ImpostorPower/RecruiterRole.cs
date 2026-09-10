@@ -28,6 +28,7 @@ public sealed class RecruiterRole(IntPtr cppPtr)
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Recruiter", "Recruiter");
     public string LocaleKey => "Recruiter";
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruiter.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruiter.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Recruiter.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;

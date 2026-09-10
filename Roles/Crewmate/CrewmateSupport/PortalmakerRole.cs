@@ -18,6 +18,7 @@ public sealed class PortalmakerRole(IntPtr cppPtr)
 {
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Portalmaker", "Portalmaker");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Portalmaker.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Portalmaker.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Portalmaker.LongDescription");
     public Color RoleColor => new Color(0.047f, 0.420f, 0.961f);
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;

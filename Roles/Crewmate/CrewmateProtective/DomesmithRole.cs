@@ -21,6 +21,7 @@ public sealed class DomesmithRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Domesmith", "Domesmith");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Domesmith.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Domesmith.MedDescription");
     public string RoleLongDescription =>
         PlayerControl.LocalPlayer
         && PlayerControl.LocalPlayer.TryGetModifier<AllianceGameModifier>(out var allyMod) && !allyMod.GetsPunished

@@ -24,6 +24,7 @@ public sealed class LocatorRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Locator", "Locator");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Locator.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Locator.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Locator.LongDescription");
     public Color RoleColor => LocatorColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;

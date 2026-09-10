@@ -36,6 +36,7 @@ public sealed class TelecomRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Telecom", "Telecom");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Telecom.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Telecom.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Telecom.LongDescription");
     public Color RoleColor => TelecomColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;

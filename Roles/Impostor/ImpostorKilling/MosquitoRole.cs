@@ -19,6 +19,7 @@ public sealed class MosquitoRole(IntPtr cppPtr)
    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Mosquito", "Mosquito");
     public string LocaleKey => "Mosquito";
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Mosquito.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Mosquito.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Mosquito.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;

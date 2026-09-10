@@ -21,6 +21,7 @@ public sealed class CunctatorRole(IntPtr cppPtr)
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Cunctator", "Cunctator");
     public string LocaleKey => "Cunctator";
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Cunctator.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Cunctator.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Cunctator.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;

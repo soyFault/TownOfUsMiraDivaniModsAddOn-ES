@@ -46,6 +46,7 @@
 <!-- Retribucionista -->
     <string name="DivaniMods.Role.Retributionist">Retribucionista</string>
     <string name="DivaniMods.Role.Retributionist.Description">¡Véngate de tu asesino!</string>
+    <string name="DivaniMods.Role.Retributionist.MedDescription">Regresa como Alma Vengativa tras morir y véngate de tu asesino para revivir.</string>
     <string name="DivaniMods.Role.Retributionist.LongDescription">Al morir, podrás vengarte de tu asesino.</string>
     <string name="DivaniMods.Role.Retributionist.AdvancedDescription">Al morir, reaparecerás en un ducto aleatorio como Alma Vengativa y tendrás tiempo limitado para encontrar y matar a tu asesino. Si lo logras, revivirás. Si fallas, serás un fantasma normal. Tu asesino no podrá usar ductos ni su habilidad si tiene un rol de Impostor de Ocultamiento.</string>
 
@@ -64,6 +65,7 @@
 <!-- Mago -->
     <string name="DivaniMods.Role.Mage">Mago</string>
     <string name="DivaniMods.Role.Mage.Description">¡Usa hechizos para ayudar a tu equipo!</string>
+    <string name="DivaniMods.Role.Mage.MedDescription">Lanza hechizos para proteger a tus aliados y debilitar a tus enemigos.</string>
     <string name="DivaniMods.Role.Mage.LongDescription">Usa tu magia para ayudar a la Tripulación&#10;y debilitar a los Impostores.</string>
     <string name="DivaniMods.Role.Mage.LongDescription.Crewpostor">Usa tu magia para ayudar a los Impostores&#10;y debilitar a la Tripulación.</string>
     <string name="DivaniMods.Role.Mage.LongDescription.Egotist">Usa tu magia para ayudar a los asesinos&#10;y debilitar a la Tripulación.</string>
@@ -106,14 +108,13 @@
     <string name="DivaniMods.Role.Workhorse">Laborioso</string>
     <string name="DivaniMods.Role.Workhorse.Description">Trabaja de más para ganar.</string>
     <string name="DivaniMods.Role.Workhorse.LongDescription">Obtén otra lista de tareas al completar la original.&#10;Completa las tareas extra para ganar por tareas.</string>
-
+    <string name="DivaniMods.Role.Workhorse.MedDescription">Completa una segunda lista de tareas para ayudar a tu equipo y revelar a tus oponentes.</string>
     <string name="DivaniMods.Role.Workhorse.Notification.SecondList">¡Aún no terminas! ¡Te espera otra lista de tareas!</string>
     <string name="DivaniMods.Role.Workhorse.Notification.FirstListFinished">¡El [role] completó su primera lista de tareas!</string>
     <string name="DivaniMods.Role.Workhorse.Notification.AlmostDone.Evil">¡El [role] casi termina! ¡Detenlo AHORA!</string>
     <string name="DivaniMods.Role.Workhorse.Notification.AlmostDone.Other">¡El [role] casi termina! ¡Expúlsenlo AHORA!</string>
     <string name="DivaniMods.Role.Workhorse.Notification.Exposed">¡Te descubrieron! ¡Quienes pierdan contra ti ya saben quién eres!</string>
     <string name="DivaniMods.Role.Workhorse.Notification.EvilsRevealed">¡Los malvados ya saben quién eres, pero ahora tú también puedes verlos!</string>
-
     <!-- Opciones del Laborioso -->
     <string name="DivaniMods.Options.Workhorse.ExtraLongTasks">Tareas largas extra</string>
     <string name="DivaniMods.Options.Workhorse.ExtraShortTasks">Tareas cortas extra</string>
@@ -124,6 +125,7 @@
 <!-- Bastión -->
     <string name="DivaniMods.Role.Domesmith">Bastión</string>
     <string name="DivaniMods.Role.Domesmith.Description">¡Protege al grupo con domos!</string>
+    <string name="DivaniMods.Role.Domesmith.MedDescription">Coloca domos protectores por el mapa para proteger a quienes estén dentro.</string>
     <string name="DivaniMods.Role.Domesmith.LongDescription">Coloca domos protectores en el suelo&#10;para proteger a quienes estén dentro.</string>
     <string name="DivaniMods.Role.Domesmith.LongDescription.Evil">Coloca domos protectores en el suelo&#10;para &lt;b&gt;proteger a los malvados.&lt;/b&gt;</string>
     <string name="DivaniMods.Role.Domesmith.Ability.PlaceDome">Colocar domo</string>
@@ -140,14 +142,13 @@
 <!-- Cronofreno -->
     <string name="DivaniMods.Role.Clockstopper">Cronofreno</string>
     <string name="DivaniMods.Role.Clockstopper.Description">¡Completa tareas y reinicia recargas!</string>
+    <string name="DivaniMods.Role.Clockstopper.MedDescription">Completa tareas para reiniciar el tiempo de ronda y darle más tiempo a tu equipo.</string>
     <string name="DivaniMods.Role.Clockstopper.LongDescription">Completa cierta cantidad de tareas&#10;para reiniciar las recargas.</string>
     <string name="DivaniMods.Role.Clockstopper.LongDescription.Evil">Completa cierta cantidad de tareas para&#10;&lt;b&gt;reiniciar las recargas de quienes no sean de tu equipo.&lt;/b&gt;</string>
-
     <string name="DivaniMods.Role.Clockstopper.Tab.ResetProgress">Progreso de reinicio: [progress] / [needed]</string>
     <string name="DivaniMods.Role.Clockstopper.Tab.Egotist">¡Usa tus reinicios para sabotear a la Tripulación!</string>
     <string name="DivaniMods.Role.Clockstopper.Tab.Impostor">¡Reinicia las recargas de los no Impostores!</string>
     <string name="DivaniMods.Role.Clockstopper.Tab.Lover">¡Reinicia todas las recargas excepto las de tu pareja!</string>
-
     <!-- Opciones del Cronofreno -->
     <string name="DivaniMods.Options.Clockstopper.TasksPerReset">Tareas por reinicio</string>
     <string name="DivaniMods.Options.Clockstopper.ResetNeutralBenign">Reiniciar Neutrales Benignos</string>
@@ -157,6 +158,7 @@
 <!-- Localizador -->
     <string name="DivaniMods.Role.Locator">Localizador</string>
     <string name="DivaniMods.Role.Locator.Description">¡Marca a los ruidosos!</string>
+    <string name="DivaniMods.Role.Locator.MedDescription">Marca jugadores como Bulliciosos hasta la próxima reunión.</string>
     <string name="DivaniMods.Role.Locator.LongDescription">Marca a un jugador para darle el modificador Bullicioso&#10;hasta la próxima reunión.</string>
     <string name="DivaniMods.Role.Locator.Ability.Mark">Marcar</string>
     <string name="DivaniMods.Role.Locator.Ability.Mark.Description">Marca a un jugador como Bullicioso hasta la próxima reunión.</string>
@@ -170,6 +172,7 @@
 <!-- Topo -->
     <string name="DivaniMods.Role.Mole">Topo</string>
     <string name="DivaniMods.Role.Mole.Description">¡Cava tu propia red de ductos!</string>
+    <string name="DivaniMods.Role.Mole.MedDescription">Excava nuevos ductos para crear tu propia red por el mapa.</string>
     <string name="DivaniMods.Role.Mole.LongDescription">Cava ductos por el mapa para crear&#10;tu propia red interconectada.</string>
     <string name="DivaniMods.Role.Mole.Ability.Dig">Cavar</string>
     <string name="DivaniMods.Role.Mole.Ability.Dig.Description">Cava un ducto en tu posición. Todos los ductos del Topo están conectados.</string>
@@ -199,6 +202,7 @@
 <!-- Portalista -->
     <string name="DivaniMods.Role.Portalmaker">Portalista</string>
     <string name="DivaniMods.Role.Portalmaker.Description">¡De aquí para allá!</string>
+    <string name="DivaniMods.Role.Portalmaker.MedDescription">Coloca portales para viajar rápidamente por el mapa.</string>
     <string name="DivaniMods.Role.Portalmaker.LongDescription">Coloca dos portales en el mapa.&#10;Cualquiera podrá usarlos para viajar entre ambos.</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.PlacePortal">Colocar portal</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.PlacePortal.Description">Coloca un portal en el suelo. Coloca dos para abrir una ruta.</string>
@@ -213,6 +217,7 @@
 <!-- Telecom -->
     <string name="DivaniMods.Role.Telecom">Telecom</string>
     <string name="DivaniMods.Role.Telecom.Description">¡Corre la voz!</string>
+    <string name="DivaniMods.Role.Telecom.MedDescription">Establece un canal de comunicación privado con otro jugador.</string>
     <string name="DivaniMods.Role.Telecom.LongDescription">Transmite a un jugador para abrir&#10;un chat privado con él.</string>
     <string name="DivaniMods.Role.Telecom.Ability.Transmission">Transmisión</string>
     <string name="DivaniMods.Role.Telecom.Ability.Transmission.Description">Abre un chat privado con el jugador que elijas.</string>
@@ -230,10 +235,12 @@
 <!-- Retornado -->
     <string name="DivaniMods.Role.Revenant">Retornado</string>
     <string name="DivaniMods.Role.Revenant.Description">Mata por los Impostores desde el más allá.</string>
+    <string name="DivaniMods.Role.Revenant.MedDescription">Regresa de la muerte para ayudar a los Impostores, pero evita que te atrapen.</string>
     <string name="DivaniMods.Role.Revenant.LongDescription">Fuiste invocado como el Retornado de los Impostores. Mata y usa ductos, pero cualquiera puede hacerte descansar.&#10;Al quedar cuatro jugadores, descansarás.</string>
 <!-- Demorador -->
     <string name="DivaniMods.Role.Cunctator">Demorador</string>
     <string name="DivaniMods.Role.Cunctator.Description">¡Retrasa los cuerpos!</string>
+    <string name="DivaniMods.Role.Cunctator.LongDescription">Los cuerpos de tus víctimas aparecen&#10;con retraso.</string>
     <string name="DivaniMods.Role.Cunctator.LongDescription">Los cuerpos de tus víctimas aparecen&#10;con retraso.</string>
     <string name="DivaniMods.Role.Cunctator.Advanced.BodyDelay">Los cuerpos aparecen tras [seconds] s.</string>
     <!-- Opciones del Demorador -->
@@ -241,6 +248,7 @@
 <!-- Mosquito -->
     <string name="DivaniMods.Role.Mosquito">Mosquito</string>
     <string name="DivaniMods.Role.Mosquito.Description">¡Bzzzzz... aplastado!</string>
+    <string name="DivaniMods.Role.Mosquito.MedDescription">Envía mosquitos mortales tras tus objetivos. Cualquiera puede aplastarlos.</string>
     <string name="DivaniMods.Role.Mosquito.LongDescription">Lanza un mosquito que vuela hacia un objetivo&#10;y lo mata de una picadura. ¡Cualquiera puede aplastarlo!</string>
     <string name="DivaniMods.Role.Mosquito.Ability.Sting">Picar</string>
     <string name="DivaniMods.Role.Mosquito.Ability.Sting.Description">Lanza un mosquito que vuela hacia un objetivo y lo mata de una picadura. Cualquiera puede aplastarlo al hacer clic o tocarlo.</string>
@@ -255,6 +263,7 @@
 <!-- Silenciador -->
     <string name="DivaniMods.Role.Silencer">Silenciador</string>
     <string name="DivaniMods.Role.Silencer.Description">¡Reduce el tiempo de votación!</string>
+    <string name="DivaniMods.Role.Silencer.MedDescription">Reduce el tiempo de votación de cada reunión con cada asesinato.</string>
     <string name="DivaniMods.Role.Silencer.LongDescription">Cada asesinato reduce el tiempo de votación&#10;de todas las reuniones por el resto de la partida.</string>
     <!-- Opciones del Silenciador -->
     <string name="DivaniMods.Options.Silencer.SecondsPerKill">Segundos menos por muerte</string>
@@ -263,6 +272,7 @@
 <!-- Ofuscador -->
     <string name="DivaniMods.Role.Obfuscator">Ofuscador</string>
     <string name="DivaniMods.Role.Obfuscator.Description">¡Manipula los votos de la Tripulación!</string>
+    <string name="DivaniMods.Role.Obfuscator.MedDescription">Intercambia los votos de dos jugadores en reuniones para manipular el resultado.</string>
     <string name="DivaniMods.Role.Obfuscator.LongDescription">Transfiere votos entre Tripulantes desprevenidos.&#10;Siempre actúa después del Intercambiador normal.</string>
     <string name="DivaniMods.Role.Obfuscator.Ability.TransferVotes">Transferir votos</string>
     <string name="DivaniMods.Role.Obfuscator.Ability.TransferVotes.Description">Elige a dos jugadores en una reunión para intercambiar sus votos al final.</string>

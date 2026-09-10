@@ -25,6 +25,7 @@ public sealed class ClockstopperRole(IntPtr cppPtr)
 {
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Clockstopper", "Clockstopper");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.MedDescription");
     public string RoleLongDescription =>
         PlayerControl.LocalPlayer
         && PlayerControl.LocalPlayer.TryGetModifier<AllianceGameModifier>(out var allyMod) && !allyMod.GetsPunished

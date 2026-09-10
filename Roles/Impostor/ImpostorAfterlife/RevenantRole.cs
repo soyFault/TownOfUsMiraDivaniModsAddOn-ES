@@ -44,6 +44,7 @@ public sealed class RevenantRole(IntPtr cppPtr)
     public string LocaleKey => "Revenant";
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Revenant", "Revenant");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Revenant.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Revenant.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Revenant.LongDescription");
 
     public string GetAdvancedDescription() => RoleLongDescription + MiscUtils.AppendOptionsText(GetType());

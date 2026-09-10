@@ -47,6 +47,7 @@ public sealed class MoleRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Mole", "Mole");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Mole.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Mole.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Mole.LongDescription");
     public Color RoleColor => MoleColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;

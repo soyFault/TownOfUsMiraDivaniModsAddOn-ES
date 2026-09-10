@@ -32,6 +32,7 @@ public sealed class WorkhorseRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Workhorse", "Workhorse");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Workhorse.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Workhorse.LongDescription");
     public Color RoleColor => WorkhorseColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
