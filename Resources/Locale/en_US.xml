@@ -16,11 +16,13 @@
     <string name="DiedToDuelist">Defeated</string>
     <string name="DiedToWatcher">Watched</string>
     <string name="DiedToThief">Robbed</string>
+    <string name="DivaniMods.DeathReason.Retaliated">Retaliated</string>
     <string name="DivaniLocalSettingDisableRainbowComms">Disable Rainbow Comms</string>
     <string name="DivaniLocalSettingDisableDemoAlternatingColors">Disable Demolitionist Alternating Colors</string>
     <string name="DivaniNeutralEvilWonSelf">You've reached your goal as [role]!</string>
     <string name="DivaniNeutralEvilTormentFeedback">You may kill one more player before the round continues.</string>
     <string name="DivaniNeutralEvilWonOther">[player] has left in victory as [role]!</string>
+    <string name="DivaniMods.Common.Unknown">Unknown</string>
 <!-- ROLES -->
 <!-- CREWMATES -->
 <!-- Vengeful Soul -->
@@ -30,6 +32,12 @@
     <string name="DivaniMods.Role.VengefulSoul.LongDescription">You were murdered as the Retributionist and rose as a Vengeful Soul.&#10;Seek revenge on your killer to return to the ship!</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge">Revenge</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge.Description">Hunt down and kill your killer before your time runs out to get revived.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.OnTheLoose">A Vengeful Soul is on the loose...</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.SeekRevenge">You are a Vengeful Soul. Seek revenge on your killer!</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.RevengeComplete">Your revenge is complete. You returned to the ship.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.LoverRevived">Your lover took their revenge. You returned to the ship.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.RevengeFailed">Your revenge failed.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.KillerSurvived">The Vengeful Soul failed to take its revenge. You live to fight another day.</string>
 <!-- Sentinel -->
     <string name="DivaniMods.Role.Sentinel">Sentinel</string>
     <string name="DivaniMods.Role.Sentinel.Description">Monitor rooms!</string>
@@ -37,6 +45,13 @@
     <string name="DivaniMods.Role.Sentinel.LongDescription">Place beacons in rooms to track who&#10;passes through them.&#10;During meetings you can see who&#10;passed through each beacon's room.</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon">Place Beacon</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description">Place a Beacon in a room to monitor its activity</string>
+    <string name="DivaniMods.Role.Sentinel.Notification.PlacingBeacon">Placing beacon...</string>
+    <string name="DivaniMods.Role.Sentinel.Notification.BeaconPlaced">Beacon [beacon] placed in [room]!</string>
+    <string name="DivaniMods.Role.Sentinel.Report.Title">Beacon Report</string>
+    <string name="DivaniMods.Role.Sentinel.Report.NoActivity">Beacon [beacon] ([room]): No activity.</string>
+    <string name="DivaniMods.Role.Sentinel.Report.Activity">Beacon [beacon] ([room]): [players]</string>
+    <string name="DivaniMods.Role.Sentinel.Report.Bodies">Beacon [beacon] ([room]): [players]</string>
+    <string name="DivaniMods.Role.Sentinel.Report.BodiesTitle">Dead Bodies that were present in your room(s)</string>
     <!-- Sentinel Options -->
     <string name="DivaniMods.Options.Sentinel.MaxBeacons">Max Beacons</string>
     <string name="DivaniMods.Options.Sentinel.PlaceBeaconCooldown">Place Beacon Cooldown</string>
@@ -78,6 +93,10 @@
     <string name="DivaniMods.Role.Mage.Notification.Energized">Energized [player]</string>
     <string name="DivaniMods.Role.Mage.Notification.YourTarget">your target</string>
     <string name="DivaniMods.Role.Mage.Notification.ShockShieldStruck">Your Shock Shield on [player] struck an attacker!</string>
+    <string name="DivaniMods.Role.Mage.Ability.ChangeSpell">Change Spell</string>
+    <string name="DivaniMods.Role.Mage.Button.Shielding">Shielding</string>
+    <string name="DivaniMods.Role.Mage.Button.Cloaking">Cloaking</string>
+    <string name="DivaniMods.Role.Mage.Notification.CastIllusion">You cast Illusion on [player]!</string>
     <!-- Mage Options -->
     <string name="DivaniMods.Options.Mage.SpellCooldown">Spell Cooldown</string>
     <string name="DivaniMods.Options.Mage.MaxShockShieldUses">Max Shock Shield Uses</string>
@@ -130,6 +149,9 @@
     <string name="DivaniMods.Role.Domesmith.LongDescription.Evil">Drop protective domes on the ground to &lt;b&gt;protect evils!&lt;/b&gt;</string>
     <string name="DivaniMods.Role.Domesmith.Ability.PlaceDome">Place Dome</string>
     <string name="DivaniMods.Role.Domesmith.Ability.PlaceDome.Description">Drop a dome to protect players inside from kills.</string>
+    <string name="DivaniMods.Role.Domesmith.Button.DomeActive">Dome Active</string>
+    <string name="DivaniMods.Role.Domesmith.Notification.PlacingDome">Placing dome in [seconds]s...</string>
+    <string name="DivaniMods.Role.Domesmith.Notification.DomePlaced">Dome placed!</string>
     <!-- Domesmith Options -->
     <string name="DivaniMods.Options.Domesmith.Charges">Dome Charges</string>
     <string name="DivaniMods.Options.Domesmith.UsesPerTasks">Tasks Required For Additional Dome Use</string>
@@ -182,6 +204,7 @@
     <string name="DivaniMods.Role.Mole.Tab.Note">Note: [text]</string>
     <string name="DivaniMods.Role.Mole.Tab.Visibility.AfterUse">Vents stay hidden until first used.</string>
     <string name="DivaniMods.Role.Mole.Tab.Visibility.AfterNextMeeting">Dug vents only appear after the next meeting.</string>
+    <string name="DivaniMods.Role.Mole.Notification.VentActivatesNextMeeting">Your placed vent at [room] will activate after the next meeting.</string>
     <!-- Mole Options -->
     <string name="DivaniMods.Options.Mole.DigCooldown">Dig Cooldown</string>
     <string name="DivaniMods.Options.Mole.MaxVents">Max Number Of Mole Vents Per Game</string>
@@ -211,6 +234,16 @@
     <string name="DivaniMods.Role.Portalmaker.Ability.PlacePortal.Description">Place a portal on the ground. Place two to open a route.</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.UsePortal">Use Portal</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.UsePortal.Description">Teleport from one portal to another.</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.PlacingPortal">Placing portal...</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.Portal1Placed">Portal 1 placed! Place another portal to complete the link.</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.Portal2PlacedNextMeeting">Portal 2 placed! Portals will be enabled after the next meeting.</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.Portal2PlacedActive">Portal 2 placed! Portals are now active!</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.Title">Portal Activity</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.NoActivity">No one used the portals.</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.PlayersUsed">Players who used the portals:</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.ImmovablePlayers">Immovable player(s) who tried to use the portals:</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.ImmovableComment">Feels bad man...</string>
+    <string name="DivaniMods.Role.Portalmaker.Location.OutsideHallway">Outside/Hallway</string>
     <!-- Portalmaker Options -->
     <string name="DivaniMods.Options.Portalmaker.PlacePortalCooldown">Place Portal Cooldown</string>
     <string name="DivaniMods.Options.Portalmaker.PlacePortalDuration">Place Portal Duration</string>
@@ -227,6 +260,7 @@
     <string name="DivaniMods.Role.Telecom.Tab.Transmitting">Transmitting: [player]</string>
     <string name="DivaniMods.Role.Telecom.Tab.NoActiveTransmission">No active transmission</string>
     <string name="DivaniMods.Role.Telecom.Chat.Name">[player] (Telecom chat)</string>
+    <string name="DivaniMods.Role.Telecom.Ability.Transmit">Transmit</string>
     <!-- Telecom Options -->
     <string name="DivaniMods.Options.Telecom.Anonymous">Telecom Is Anonymous</string>
     <string name="DivaniMods.Options.Telecom.TargetSelection">Target Selection</string>
@@ -293,6 +327,8 @@
     <string name="DivaniMods.Role.Recruiter.Ability.Recruit.Description">During a meeting, mark one non-Impostor to convert them into a Recruit.</string>
     <string name="DivaniMods.Role.Recruiter.Ability.ChangeRole">Change Role</string>
     <string name="DivaniMods.Role.Recruiter.Ability.ChangeRole.Description">If enabled, pick a new Impostor role for yourself after a successful recruit.</string>
+    <string name="DivaniMods.Notification.NoImpostorRolesAvailable">No Impostor roles are available to change into.</string>
+
     <!-- Recruiter Options -->
     <string name="DivaniMods.Options.Recruiter.RecruitedBecomesAssassin">Recruited Impostor Becomes Assassin</string>
     <string name="DivaniMods.Options.Recruiter.RecruiterCanChangeRole">Recruiter Can Choose A New Role After Recruiting</string>
@@ -823,11 +859,4 @@
     <string name="DivaniMods.Options.AllianceModifiers">Alliance Modifiers</string>
     <string name="DivaniMods.Options.AllianceModifiers.Betrayer.Amount">Betrayer Amount</string>
     <string name="DivaniMods.Options.AllianceModifiers.Betrayer.Chance">Betrayer Chance</string>
-<<<<<<< Updated upstream
-=======
-<!-- MODIFIER OPTIONS -->
-
-
-
->>>>>>> Stashed changes
 </resources>

@@ -16,6 +16,7 @@
     <string name="DiedToDuelist">Derrotado</string>
     <string name="DiedToWatcher">Observado</string>
     <string name="DiedToThief">Robado</string>
+    <string name="DivaniMods.DeathReason.Retaliated">Represalia</string>
     <string name="DivaniLocalSettingDisableRainbowComms">Desactivar Comms arcoíris</string>
     <string name="DivaniLocalSettingDisableDemoAlternatingColors">Desactivar colores alternos del Demoledor</string>
     <string name="DivaniNeutralEvilWonSelf">¡Cumpliste tu objetivo como [role]!</string>
@@ -30,6 +31,12 @@
     <string name="DivaniMods.Role.VengefulSoul.LongDescription">Moriste como Retribucionista y volviste como Alma Vengativa.&#10;Véngate de tu asesino para regresar a la nave.</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge">Venganza</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge.Description">Mata a tu asesino antes de que se acabe el tiempo para revivir.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.OnTheLoose">Un Alma Vengativa anda suelta...</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.SeekRevenge">¡Eres un Alma Vengativa. Véngate de tu asesino!</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.RevengeComplete">Completaste tu venganza. Regresaste a la nave.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.LoverRevived">Tu Enamorado se vengó. Regresaste a la nave.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.RevengeFailed">Tu venganza fracasó.</string>
+    <string name="DivaniMods.Role.VengefulSoul.Notification.KillerSurvived">El Alma Vengativa no logró vengarse. Vivirás para luchar otro día.</string>
 <!-- Custodio -->
     <string name="DivaniMods.Role.Sentinel">Custodio</string>
     <string name="DivaniMods.Role.Sentinel.Description">¡Vigila las salas!</string>
@@ -79,6 +86,10 @@
     <string name="DivaniMods.Role.Mage.Notification.Energized">Energizaste a [player]</string>
     <string name="DivaniMods.Role.Mage.Notification.YourTarget">tu objetivo</string>
     <string name="DivaniMods.Role.Mage.Notification.ShockShieldStruck">¡El Escudo Eléctrico de [player] golpeó a un atacante!</string>
+    <string name="DivaniMods.Role.Mage.Ability.ChangeSpell">Cambiar Hechizo</string>
+    <string name="DivaniMods.Role.Mage.Button.Shielding">PROTEGIENDO</string>
+    <string name="DivaniMods.Role.Mage.Button.Cloaking">OCULTANDO</string>
+    <string name="DivaniMods.Role.Mage.Notification.CastIllusion">¡Lanzaste Ilusión sobre [player]!</string>
     <!-- Opciones del Mago -->
     <string name="DivaniMods.Options.Mage.SpellCooldown">Recarga de hechizos</string>
     <string name="DivaniMods.Options.Mage.MaxShockShieldUses">Máx. usos de Escudo</string>
@@ -130,6 +141,9 @@
     <string name="DivaniMods.Role.Domesmith.LongDescription.Evil">Coloca domos protectores en el suelo&#10;para &lt;b&gt;proteger a los malvados.&lt;/b&gt;</string>
     <string name="DivaniMods.Role.Domesmith.Ability.PlaceDome">Colocar domo</string>
     <string name="DivaniMods.Role.Domesmith.Ability.PlaceDome.Description">Coloca un domo que protege de asesinatos a quienes estén dentro.</string>
+    <string name="DivaniMods.Role.Domesmith.Button.DomeActive">DOMO ACTIVO</string>
+    <string name="DivaniMods.Role.Domesmith.Notification.PlacingDome">Colocando domo en [seconds]s...</string>
+    <string name="DivaniMods.Role.Domesmith.Notification.DomePlaced">¡Domo colocado!</string>
     <!-- Opciones del Bastión -->
     <string name="DivaniMods.Options.Domesmith.Charges">Cargas de domo</string>
     <string name="DivaniMods.Options.Domesmith.UsesPerTasks">Tareas por carga extra</string>
@@ -182,6 +196,7 @@
     <string name="DivaniMods.Role.Mole.Tab.Note">Nota: [text]</string>
     <string name="DivaniMods.Role.Mole.Tab.Visibility.AfterUse">Los ductos permanecen ocultos hasta usarse.</string>
     <string name="DivaniMods.Role.Mole.Tab.Visibility.AfterNextMeeting">Los ductos aparecen tras la próxima reunión.</string>
+    <string name="DivaniMods.Role.Mole.Notification.VentActivatesNextMeeting">Tu ducto en [room] se activará después de la próxima reunión.</string>
     <!-- Opciones del Topo -->
     <string name="DivaniMods.Options.Mole.DigCooldown">Recarga de Cavar</string>
     <string name="DivaniMods.Options.Mole.MaxVents">Máx. de ductos</string>
@@ -208,6 +223,16 @@
     <string name="DivaniMods.Role.Portalmaker.Ability.PlacePortal.Description">Coloca un portal en el suelo. Coloca dos para abrir una ruta.</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.UsePortal">Usar portal</string>
     <string name="DivaniMods.Role.Portalmaker.Ability.UsePortal.Description">Teletranspórtate de un portal al otro.</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.PlacingPortal">Colocando portal...</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.Portal1Placed">¡Portal 1 colocado! Coloca otro para completar el enlace.</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.Portal2PlacedNextMeeting">¡Portal 2 colocado! Los portales se activarán después de la próxima reunión.</string>
+    <string name="DivaniMods.Role.Portalmaker.Notification.Portal2PlacedActive">¡Portal 2 colocado! ¡Los portales ya están activos!</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.Title">Actividad de portales</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.NoActivity">Nadie usó los portales.</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.PlayersUsed">Jugadores que usaron los portales:</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.ImmovablePlayers">Jugadores Inamovibles que intentaron usar los portales:</string>
+    <string name="DivaniMods.Role.Portalmaker.Report.ImmovableComment">Qué mala suerte...</string>
+    <string name="DivaniMods.Role.Portalmaker.Location.OutsideHallway">Exterior/Pasillo</string>
     <!-- Opciones del Portalista -->
     <string name="DivaniMods.Options.Portalmaker.PlacePortalCooldown">Recarga al colocar</string>
     <string name="DivaniMods.Options.Portalmaker.PlacePortalDuration">Duración al colocar</string>
@@ -224,6 +249,7 @@
     <string name="DivaniMods.Role.Telecom.Tab.Transmitting">Transmitiendo a: [player]</string>
     <string name="DivaniMods.Role.Telecom.Tab.NoActiveTransmission">Sin transmisión activa</string>
     <string name="DivaniMods.Role.Telecom.Chat.Name">[player] (chat de Telecom)</string>
+    <string name="DivaniMods.Role.Telecom.Ability.Transmit">Transmitir</string>
     <!-- Opciones de Telecom -->
     <string name="DivaniMods.Options.Telecom.Anonymous">Telecom es anónimo</string>
     <string name="DivaniMods.Options.Telecom.TargetSelection">Elegir objetivo</string>
@@ -240,7 +266,7 @@
 <!-- Demorador -->
     <string name="DivaniMods.Role.Cunctator">Demorador</string>
     <string name="DivaniMods.Role.Cunctator.Description">¡Retrasa los cuerpos!</string>
-    <string name="DivaniMods.Role.Cunctator.LongDescription">Los cuerpos de tus víctimas aparecen&#10;con retraso.</string>
+    <string name="DivaniMods.Role.Cunctator.MedDescription">Los cuerpos de tus víctimas aparecen con retraso.</string>
     <string name="DivaniMods.Role.Cunctator.LongDescription">Los cuerpos de tus víctimas aparecen&#10;con retraso.</string>
     <string name="DivaniMods.Role.Cunctator.Advanced.BodyDelay">Los cuerpos aparecen tras [seconds] s.</string>
     <!-- Opciones del Demorador -->
@@ -290,6 +316,8 @@
     <string name="DivaniMods.Role.Recruiter.Ability.Recruit.Description">Durante una reunión, marca a un no Impostor para convertirlo en Recluta.</string>
     <string name="DivaniMods.Role.Recruiter.Ability.ChangeRole">Cambiar rol</string>
     <string name="DivaniMods.Role.Recruiter.Ability.ChangeRole.Description">Si está activado, elige otro rol de Impostor tras reclutar con éxito.</string>
+    <string name="DivaniMods.Notification.NoImpostorRolesAvailable">No hay roles de Impostor disponibles.</string>
+
     <!-- Opciones del Reclutador -->
     <string name="DivaniMods.Options.Recruiter.RecruitedBecomesAssassin">Reclutado obtiene Asesino</string>
     <string name="DivaniMods.Options.Recruiter.RecruiterCanChangeRole">Cambiar rol tras reclutar</string>
@@ -304,7 +332,8 @@
     <string name="DivaniMods.Role.Recruit.MedDescription">Elige uno de tres roles de Impostor después de ser reclutado.</string>
     <string name="DivaniMods.Role.Recruit.LongDescription">El Reclutador te convirtió en Impostor.&#10;Usa Cambiar rol para elegir entre tres roles de Impostor.</string>
     <string name="DivaniMods.Role.Recruit.Ability.ChangeRole">Cambiar rol</string>
-    <string name="DivaniMods.Role.Recruit.Ability.ChangeRole.Description">Elige uno de tres roles de Impostor al azar para convertirte en él.</string>2
+    <string name="DivaniMods.Role.Recruit.Ability.ChangeRole.Description">Elige uno de tres roles de Impostor al azar para convertirte en él.</string>
+
 <!-- Invocador -->
     <string name="DivaniMods.Role.Summoner">Invocador</string>
     <string name="DivaniMods.Role.Summoner.Description">¡Recluta aliados muertos!</string>
