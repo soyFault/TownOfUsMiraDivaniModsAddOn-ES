@@ -55,6 +55,7 @@ public sealed class PlagueDoctorRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.PlagueDoctor", "Plague Doctor");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.PlagueDoctor.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.PlagueDoctor.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.PlagueDoctor.LongDescription");
     public Color RoleColor => PlagueDoctorColor;
 

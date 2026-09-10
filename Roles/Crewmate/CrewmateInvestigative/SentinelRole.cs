@@ -16,10 +16,10 @@ public sealed class SentinelRole(IntPtr cppPtr)
 {
     public static readonly Color SentinelColor = new Color32(244, 169, 60, 255);
 
-    public string RoleName => MiraLocaleManager.Get("SentinelRoleName", "Sentinel");
-    public string RoleDescription => MiraLocaleManager.Get("Sentinel.Role.Description");
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Sentinel", "Sentinel");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.Description");
     public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.MedDescription");
-    public string RoleLongDescription => MiraLocaleManager.Get("Sentinel.Role.LongDescription"); 
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.LongDescription"); 
     public Color RoleColor => SentinelColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateInvestigative;

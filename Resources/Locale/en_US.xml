@@ -287,6 +287,7 @@
 <!-- Recruiter -->
     <string name="DivaniMods.Role.Recruiter">Recruiter</string>
     <string name="DivaniMods.Role.Recruiter.Description">Pick your partner!</string>
+    <string name="DivaniMods.Role.Recruiter.MedDescription">Recruit a non-Impostor during a meeting to join the Impostors and choose a new role.</string>
     <string name="DivaniMods.Role.Recruiter.LongDescription">In any meeting, recruit a non-Impostor to become a Recruit once. The Recruit joins the Impostors and picks a new Impostor role.</string>
     <string name="DivaniMods.Role.Recruiter.Ability.Recruit">Recruit</string>
     <string name="DivaniMods.Role.Recruiter.Ability.Recruit.Description">During a meeting, mark one non-Impostor to convert them into a Recruit.</string>
@@ -304,12 +305,14 @@
 <!-- Recruit -->
     <string name="DivaniMods.Role.Recruit">Recruit</string>
     <string name="DivaniMods.Role.Recruit.Description">You were recruited! Pick your new role.</string>
+    <string name="DivaniMods.Role.Recruit.MedDescription">Choose one of three Impostor roles after being recruited.</string>
     <string name="DivaniMods.Role.Recruit.LongDescription">The Recruiter converted you into an Impostor. Use the Change Role button to pick one of three Impostor roles.</string>
     <string name="DivaniMods.Role.Recruit.Ability.ChangeRole">Change Role</string>
     <string name="DivaniMods.Role.Recruit.Ability.ChangeRole.Description">Choose one of three random Impostor roles to become.</string>
 <!-- Summoner -->
     <string name="DivaniMods.Role.Summoner">Summoner</string>
     <string name="DivaniMods.Role.Summoner.Description">Recruit dead shipmates!</string>
+    <string name="DivaniMods.Role.Summoner.MedDescription">Recruit a dead player during a meeting to return as a Revenant for the Impostors.</string>
     <string name="DivaniMods.Role.Summoner.LongDescription">During meetings, recruit a dead Crewmate or Neutral to rise as the Impostor afterlife Revenant.&#10;Disabled in the final four</string>
     <string name="DivaniMods.Role.Summoner.Tab.KillsRequired">Kills required for new summon [kills]/[required]</string>
     <string name="DivaniMods.Role.Summoner.Tab.RevenantActive">One of your Revenants is on the loose.</string>
@@ -326,6 +329,7 @@
 <!-- Councillor -->
     <string name="DivaniMods.Role.Councillor">Councillor</string>
     <string name="DivaniMods.Role.Councillor.Description">Your vote? It's mine!</string>
+    <string name="DivaniMods.Role.Councillor.MedDescription">Gain extra votes from your kills to use in the next meeting.</string>
     <string name="DivaniMods.Role.Councillor.LongDescription">Each kill will give you extra votes to use in only the next meeting.</string>
     <string name="DivaniMods.Role.Councillor.Tab.ExtraVotes">Extra votes next meeting: +[votes]</string>
     <!-- Councillor Options -->
@@ -333,6 +337,7 @@
 <!-- Deadlock -->
     <string name="DivaniMods.Role.Deadlock">Deadlock</string>
     <string name="DivaniMods.Role.Deadlock.Description">Disable tasks!</string>
+    <string name="DivaniMods.Role.Deadlock.MedDescription">Temporarily disable all Crewmate tasks with Lockdown.</string>
     <string name="DivaniMods.Role.Deadlock.LongDescription">Use your Lockdown ability to temporarily&#10;disable all crewmate tasks.&#10;During lockdown, crewmates cannot access&#10;or complete any tasks.</string>
     <string name="DivaniMods.Role.Deadlock.Ability.Lockdown">Lockdown</string>
     <string name="DivaniMods.Role.Deadlock.Ability.Lockdown.Description">Temporarily disable all crewmate tasks.</string>
@@ -345,6 +350,7 @@
 <!-- Cupid -->
     <string name="DivaniMods.Role.Cupid">Cupid</string>
     <string name="DivaniMods.Role.Cupid.Description">Spread the love!</string>
+    <string name="DivaniMods.Role.Cupid.MedDescription">Match two players as Lovers and protect them from death with Bestow.</string>
     <string name="DivaniMods.Role.Cupid.LongDescription">Use Matchmake to make two people fall in love next round&#10;You can Bestow your lovers to protect them</string>
     <string name="DivaniMods.Role.Cupid.Ability.Matchmake">Matchmake</string>
     <string name="DivaniMods.Role.Cupid.Ability.Matchmake.Description">Mark a player as a provisional lover.</string>
@@ -378,6 +384,7 @@
 <!-- Demolitionist -->
     <string name="DivaniMods.Role.Demolitionist">Demolitionist</string>
     <string name="DivaniMods.Role.Demolitionist.Description">The bomb has been planted!</string>
+    <string name="DivaniMods.Role.Demolitionist.MedDescription">Plant bombs on consoles and successfully detonate enough of them to win.</string>
     <string name="DivaniMods.Role.Demolitionist.LongDescription">Plant Bombs at consoles (Admin, Cams, Doorlog, Vitals) to win!&#10;If the crew defuses in time, it fails.</string>
     <string name="DivaniMods.Role.Demolitionist.Ability.Plant">Plant</string>
     <string name="DivaniMods.Role.Demolitionist.Ability.Plant.Description">Plant a bomb at a console (Admin, Cams, Doorlog, Vitals) to start a sabotage. It explodes unless the crew defuses it in time.</string>
@@ -406,6 +413,7 @@
 <!-- Innocent -->
     <string name="DivaniMods.Role.Innocent">Innocent</string>
     <string name="DivaniMods.Role.Innocent.Description">I swear it wasn't me!</string>
+    <string name="DivaniMods.Role.Innocent.MedDescription">Force a player to kill you, then get them ejected in the next meeting to win.</string>
     <string name="DivaniMods.Role.Innocent.LongDescription">Use Taunt on another player to make them immediately kill you.&#10;If that player is voted out in the next meeting, you win.</string>
     <string name="DivaniMods.Role.Innocent.Ability.Taunt">Taunt</string>
     <string name="DivaniMods.Role.Innocent.Ability.Taunt.Description">Force a player to immediately kill you. You will win if that player is voted out in the next meeting.</string>
@@ -421,6 +429,7 @@
 <!-- Opportunist -->
     <string name="DivaniMods.Role.Opportunist">Opportunist</string>
     <string name="DivaniMods.Role.Opportunist.Description">Benefit from others!</string>
+    <string name="DivaniMods.Role.Opportunist.MedDescription">Collect votes cast against the players you vote for and gather enough to win.</string>
     <string name="DivaniMods.Role.Opportunist.LongDescription">After you vote a target, every other vote cast on that same target during the meeting counts toward your goal.&#10;Reach the required number of collected votes to win alone.&#10;If enabled by host, use wildcard to make skip votes count towards your tally once.</string>
     <string name="DivaniMods.Role.Opportunist.AdvancedDescription">After you vote a target, every other vote cast on that same target during the meeting counts toward your goal (max: [max]).&#10;Reach the required number of collected votes to win alone.&#10;If enabled by host, use wildcard to make skip votes count towards your tally once.</string>
     <string name="DivaniMods.Role.Opportunist.Ability.Wildcard">Wildcard</string>
@@ -441,6 +450,7 @@
 <!-- Plague Doctor -->
     <string name="DivaniMods.Role.PlagueDoctor">Plague Doctor</string>
     <string name="DivaniMods.Role.PlagueDoctor.Description">Cough, cough!</string>
+    <string name="DivaniMods.Role.PlagueDoctor.MedDescription">Infect players and spread the plague until every living player is infected.</string>
     <string name="DivaniMods.Role.PlagueDoctor.LongDescription">You are a Plague Doctor.&#10;Use your ability to infect players directly.&#10;Infected players will spread the disease&#10;to others who stand near them.&#10;Win by infecting all living players!</string>
     <string name="DivaniMods.Role.PlagueDoctor.Ability.Infect">Infect</string>
     <string name="DivaniMods.Role.PlagueDoctor.Ability.Infect.Description">Directly infect a player.</string>
@@ -465,6 +475,7 @@
 <!-- Frag -->
     <string name="DivaniMods.Role.Frag">Frag</string>
     <string name="DivaniMods.Role.Frag.Description">Here, Hold this!</string>
+    <string name="DivaniMods.Role.Frag.MedDescription">Give a Frag to a player. Whoever holds it when the timer ends dies.</string>
     <string name="DivaniMods.Role.Frag.LongDescription">Give a Frag to a player.&#10;Everyone can pass this Frag to one other&#10;The one holding it at the end, dies!</string>
     <string name="DivaniMods.Role.Frag.Ability.GiveFrag">Give Frag</string>
     <string name="DivaniMods.Role.Frag.Ability.GiveFrag.Description">Give the Frag to someone.</string>
@@ -482,6 +493,7 @@
 <!-- Monster -->
     <string name="DivaniMods.Role.Monster">Monster</string>
     <string name="DivaniMods.Role.Monster.Description">Devour Everyone</string>
+    <string name="DivaniMods.Role.Monster.MedDescription">Devour players to trap them. Survive until the next meeting to kill everyone you've eaten.</string>
     <string name="DivaniMods.Role.Monster.LongDescription">Eat nearby players to trap them. If you make it to the next meeting,&#10;everyone you've eaten is killed for real. If you die first, they're released instead.</string>
     <string name="DivaniMods.Role.Monster.Ability.Devour">Devour</string>
     <string name="DivaniMods.Role.Monster.Ability.Devour.Description">When you Devour a player, they are trapped. If you die first, they are released instead.</string>
@@ -494,6 +506,7 @@
 <!-- Thief -->
     <string name="DivaniMods.Role.Thief">Thief</string>
     <string name="DivaniMods.Role.Thief.Description">Steal everything!</string>
+    <string name="DivaniMods.Role.Thief.MedDescription">Steal modifiers from other players and kill until you're the last one standing.</string>
     <string name="DivaniMods.Role.Thief.LongDescription">Use your Pickpocket ability to steal modifiers from players and kill to be the last person standing!</string>
     <string name="DivaniMods.Role.Thief.Ability.Pickpocket">Pickpocket</string>
     <string name="DivaniMods.Role.Thief.Ability.Pickpocket.Description">Steal a modifier from a nearby player. You can only target players who have a modifier to steal. Trying to steal a modifier you cannot use will give you a random modifier instead.</string>
@@ -510,6 +523,7 @@
 <!-- Watcher -->
     <string name="DivaniMods.Role.Watcher">Watcher</string>
     <string name="DivaniMods.Role.Watcher.Description">Green light... Red light!</string>
+    <string name="DivaniMods.Role.Watcher.MedDescription">Start Red Light, Green Light and kill anyone who moves during Red Light.</string>
     <string name="DivaniMods.Role.Watcher.LongDescription">Call out Red Light, Green Light.&#10;Anyone who moves during Red Light dies.</string>
     <string name="DivaniMods.Role.Watcher.Advanced.GracePeriod">Red Light starts with a [seconds]s grace period. Moving during it won't get you killed.</string>
     <string name="DivaniMods.Role.Watcher.Advanced.Exceptions">Players locked in a Duel or currently invisible are not affected by Red Light.</string>

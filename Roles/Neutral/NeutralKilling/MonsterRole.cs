@@ -30,6 +30,7 @@ public sealed class MonsterRole(IntPtr cppPtr) : NeutralRole(cppPtr), ITownOfUsR
     public static readonly Color MonsterColor = new Color32(107, 179, 48, 255);
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Monster", "Monster");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Monster.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Monster.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Monster.LongDescription");
 
     public Color RoleColor => MonsterColor;

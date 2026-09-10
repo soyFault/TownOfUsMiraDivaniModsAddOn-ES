@@ -32,6 +32,7 @@ public sealed class FragRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Frag", "Frag");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Frag.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Frag.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Frag.LongDescription");
     public Color RoleColor => FragColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Custom;

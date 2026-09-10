@@ -34,6 +34,7 @@ public sealed class WatcherRole(IntPtr cppPtr)
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Watcher", "Watcher");
     public string LocaleKey => "Watcher";
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Watcher.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Watcher.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Watcher.LongDescription");
     public Color RoleColor => WatcherColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Custom;

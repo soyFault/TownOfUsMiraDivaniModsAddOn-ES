@@ -45,6 +45,7 @@ public sealed class CupidRole(IntPtr cppPtr)
     public string LocaleKey => "Cupid";
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Cupid", "Cupid");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Cupid.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Cupid.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Cupid.LongDescription");
 
     public Color RoleColor => CupidColor;

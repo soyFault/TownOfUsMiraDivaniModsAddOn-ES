@@ -31,6 +31,7 @@ public sealed class ThiefRole(IntPtr cppPtr)
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Thief", "Thief");
     public string LocaleKey => "Thief";
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Thief.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Thief.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Thief.LongDescription");
     public Color RoleColor => ThiefColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Custom;

@@ -34,6 +34,7 @@ public sealed class DemolitionistRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Demolitionist", "Demolitionist");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Demolitionist.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Demolitionist.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Demolitionist.LongDescription");
     public Color RoleColor => DemolitionistColor;
 

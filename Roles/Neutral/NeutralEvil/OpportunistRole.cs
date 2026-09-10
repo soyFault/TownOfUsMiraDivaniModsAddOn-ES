@@ -51,6 +51,7 @@ public sealed class OpportunistRole(IntPtr cppPtr)
 
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Opportunist", "Opportunist");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Opportunist.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Opportunist.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Opportunist.LongDescription");
     public Color RoleColor => OpportunistColor;
 

@@ -25,6 +25,7 @@ public sealed class CouncillorRole(IntPtr cppPtr)
 {
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Councillor", "Councillor");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Councillor.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Councillor.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Councillor.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;

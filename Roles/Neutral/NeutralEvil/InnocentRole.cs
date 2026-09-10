@@ -41,6 +41,7 @@ public sealed class InnocentRole(IntPtr cppPtr)
     public bool CanBeGuessed => true;
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Innocent", "Innocent");
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Innocent.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Innocent.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Innocent.LongDescription");
     public Color RoleColor => InnocentColor;
 

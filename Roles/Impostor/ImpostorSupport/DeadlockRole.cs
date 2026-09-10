@@ -20,6 +20,7 @@ public sealed class DeadlockRole(IntPtr cppPtr)
     public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Deadlock", "Deadlock");
     public string LocaleKey => "Deadlock";
     public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Deadlock.Description");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Deadlock.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Deadlock.LongDescription");
     public Color RoleColor => Palette.ImpostorRed;
     public ModdedRoleTeams Team => ModdedRoleTeams.Impostor;
