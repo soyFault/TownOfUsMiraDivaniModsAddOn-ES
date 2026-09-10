@@ -16,10 +16,16 @@ public sealed class SentinelRole(IntPtr cppPtr)
 {
     public static readonly Color SentinelColor = new Color32(244, 169, 60, 255);
 
+<<<<<<< Updated upstream
     public string RoleName => MiraLocaleManager.Get("SentinelRoleName", "Sentinel");
     public string RoleDescription => MiraLocaleManager.Get("Sentinel.Role.Description");
     public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("Sentinel.Role.LongDescription"); 
+=======
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.Sentinel", "Sentinel");
+    public string RoleDescription => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.Description");
+    public string RoleLongDescription => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.LongDescription");
+>>>>>>> Stashed changes
     public Color RoleColor => SentinelColor;
     public ModdedRoleTeams Team => ModdedRoleTeams.Crewmate;
     public RoleAlignment RoleAlignment => RoleAlignment.CrewmateInvestigative;
@@ -31,8 +37,8 @@ public sealed class SentinelRole(IntPtr cppPtr)
     [HideFromIl2Cpp] public List<CustomButtonWikiDescription> Abilities { get; } =
     [
         new(
-            MiraLocaleManager.Get("SentinelPlaceBeacon"),
-            MiraLocaleManager.Get("SentinelPlaceBeaconDescription"),
+            MiraLocaleManager.Get("DivaniMods.Role.Sentinel.Ability.PlaceBeacon"),
+            MiraLocaleManager.Get("DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description"),
             DivaniAssets.SentinelPlaceBeaconButton
         )
     ];

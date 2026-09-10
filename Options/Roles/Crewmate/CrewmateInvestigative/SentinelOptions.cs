@@ -9,20 +9,20 @@ namespace DivaniMods.Options;
 
 public class SentinelOptions : AbstractRoleOptionGroup<SentinelRole>
 {
-    public override string GroupName => MiraLocaleManager.Get("SentinelRoleName", "Sentinel");
+    public override string GroupName => MiraLocaleManager.Get("DivaniMods.Role.Sentinel", "Sentinel");
 
     public ModdedNumberOption MaxBeacons { get; } = new(
-        MiraLocaleManager.Get("SentinelMaxBeacons"), 3f, 1f, 5f, 1f, MiraNumberSuffixes.None);
+        MiraLocaleManager.Get("DivaniMods.Options.Sentinel.MaxBeacons"), 3f, 1f, 5f, 1f, MiraNumberSuffixes.None);
 
     public ModdedNumberOption PlaceBeaconCooldown { get; } = new(
-        MiraLocaleManager.Get("SentinelPlaceBeaconCooldown"), 15f, 5f, 60f, 5f, MiraNumberSuffixes.Seconds);
+        MiraLocaleManager.Get("DivaniMods.Options.Sentinel.PlaceBeaconCooldown"), 15f, 5f, 60f, 5f, MiraNumberSuffixes.Seconds);
 
     public ModdedNumberOption PlaceBeaconDuration { get; } = new(
-        MiraLocaleManager.Get("SentinelPlaceBeaconDuration"), 3f, 1f, 10f, 0.5f, MiraNumberSuffixes.Seconds);
+        MiraLocaleManager.Get("DivaniMods.Options.Sentinel.PlaceBeaconDuration"), 3f, 1f, 10f, 0.5f, MiraNumberSuffixes.Seconds);
 
-    [ModdedToggleOption("SentinelShowRoomActivityInChat")]
+    [ModdedToggleOption("DivaniMods.Options.Sentinel.ShowRoomActivityInChat")]
     public bool ShowChatReport { get; set; } = true;
 
-    [ModdedToggleOption("SentinelShowBodiesFoundInBeaconRooms")]
+    [ModdedToggleOption("DivaniMods.Options.Sentinel.ShowBodiesFoundInBeaconRooms")]
     public bool ShowBodyReport { get; set; } = false;
 }

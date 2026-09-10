@@ -33,7 +33,10 @@
 <!-- Sentinel -->
     <string name="DivaniMods.Role.Sentinel">Sentinel</string>
     <string name="DivaniMods.Role.Sentinel.Description">Monitor rooms!</string>
+<<<<<<< Updated upstream
     <string name="DivaniMods.Role.Sentinel.MedDescription">Place a Beacon in a room to monitor its activity</string>
+=======
+>>>>>>> Stashed changes
     <string name="DivaniMods.Role.Sentinel.LongDescription">Place beacons in rooms to track who&#10;passes through them.&#10;During meetings you can see who&#10;passed through each beacon's room.</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon">Place Beacon</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description">Place a Beacon in a room to monitor its activity</string>
@@ -780,4 +783,11 @@
     <string name="DivaniMods.Options.AllianceModifiers">Alliance Modifiers</string>
     <string name="DivaniMods.Options.AllianceModifiers.Betrayer.Amount">Betrayer Amount</string>
     <string name="DivaniMods.Options.AllianceModifiers.Betrayer.Chance">Betrayer Chance</string>
+<<<<<<< Updated upstream
+=======
+<!-- MODIFIER OPTIONS -->
+
+
+
+>>>>>>> Stashed changes
 </resources>
