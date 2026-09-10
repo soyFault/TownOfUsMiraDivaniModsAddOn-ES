@@ -39,8 +39,9 @@ public sealed class VengefulSoulRole(IntPtr cppPtr)
     public bool CanCatch() => false;
 
     public string LocaleKey => "VengefulSoul";
-    public string RoleName => MiraLocaleManager.Get("VengefulSoulRoleName", "Vengeful Soul");
+    public string RoleName => MiraLocaleManager.Get("DivaniMods.Role.VengefulSoul", "Vengeful Soul");
     public string RoleDescription => MiraLocaleManager.Get("VengefulSoulRoleDescription");
+    public string RoleMedDescription => MiraLocaleManager.Get("DivaniMods.Role.VengefulSoul.MedDescription");
     public string RoleLongDescription => MiraLocaleManager.Get("VengefulSoulRoleLongDescription");
 
     public string GetAdvancedDescription() => RoleLongDescription + MiscUtils.AppendOptionsText(GetType());

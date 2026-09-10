@@ -26,12 +26,14 @@
 <!-- Alma Vengativa -->
     <string name="DivaniMods.Role.VengefulSoul">Alma Vengativa</string>
     <string name="DivaniMods.Role.VengefulSoul.Description">¡Caza a tu asesino!</string>
+    <string name="DivaniMods.Role.VengefulSoul.MedDescription">Caza a tu asesino y véngate para revivir.</string>
     <string name="DivaniMods.Role.VengefulSoul.LongDescription">Moriste como Retribucionista y volviste como Alma Vengativa.&#10;Véngate de tu asesino para regresar a la nave.</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge">Venganza</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge.Description">Mata a tu asesino antes de que se acabe el tiempo para revivir.</string>
 <!-- Custodio -->
     <string name="DivaniMods.Role.Sentinel">Custodio</string>
     <string name="DivaniMods.Role.Sentinel.Description">¡Vigila las salas!</string>
+    <string name="DivaniMods.Role.Sentinel.MedDescription">Coloca balizas para vigilar la actividad de las salas.</string>
     <string name="DivaniMods.Role.Sentinel.LongDescription">Coloca balizas en salas para rastrear quién pasa por ellas.&#10;Durante las reuniones, podrás ver quién pasó por cada sala vigilada.</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon">Colocar baliza</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description">Coloca una baliza para vigilar la actividad de una sala.</string>
@@ -588,8 +590,8 @@
     <string name="DivaniMods.Options.Betrayer.RevealAtPlayersLeftMultiImp">Revelar restantes (3+ Imp.)</string>
 <!-- Renegado Revelado -->
     <string name="DivaniMods.Modifier.BetrayerRevealed">Renegado Revelado</string>
-    <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Revealed">Los Impostores conocen tu ubicación como <color=[color]>Renegado</color>. ¡Mantente alerta!</string>
-    <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Impostors">¡[player] los ha traicionado todo este tiempo! Maten al <color=[color]>Renegado</color> antes de que les robe la victoria.</string>
+    <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Revealed">Los Impostores conocen tu ubicación como &lt;color=[color]&gt;Renegado&lt;/color&gt;. ¡Mantente alerta!</string>
+    <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Impostors">¡[player] los ha traicionado todo este tiempo! Maten al &lt;color=[color]&gt;Renegado&lt;/color&gt; antes de que les robe la victoria.</string>
 <!-- Trampa para Osos -->
     <string name="DivaniMods.Modifier.BearTrap">Trampa para Osos</string> <string name="DivaniMods.Modifier.BearTrap.IntroInfo">Atrapa a tu asesino al morir.</string> <string name="DivaniMods.Modifier.BearTrap.Description">Al morir, tu asesino queda inmóvil por [seconds] segundos y no puede reportar tu cuerpo.</string>
     <!-- Opciones de Trampa para Osos -->
