@@ -26,6 +26,7 @@
 <!-- Vengeful Soul -->
     <string name="DivaniMods.Role.VengefulSoul">Vengeful Soul</string>
     <string name="DivaniMods.Role.VengefulSoul.Description">Hunt down your killer!</string>
+    <string name="DivaniMods.Role.VengefulSoul.MedDescription">Hunt down your killer and take revenge to revive.</string>
     <string name="DivaniMods.Role.VengefulSoul.LongDescription">You were murdered as the Retributionist and rose as a Vengeful Soul.&#10;Seek revenge on your killer to return to the ship!</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge">Revenge</string>
     <string name="DivaniMods.Role.VengefulSoul.Ability.Revenge.Description">Hunt down and kill your killer before your time runs out to get revived.</string>
