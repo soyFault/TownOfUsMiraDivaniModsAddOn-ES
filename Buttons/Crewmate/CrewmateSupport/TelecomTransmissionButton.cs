@@ -107,7 +107,7 @@ public sealed class TelecomTransmissionButton : TownOfUsTargetButton<PlayerContr
         {
             EffectActive = true;
             Timer = EffectDuration;
-            SetLabel("Transmissing");
+            SetLabel(MiraLocaleManager.Get("DivaniMods.Role.Telecom.Button.Transmitting")); // For some reason it said Transmissing instead of Transmitting
         }
         else
         {

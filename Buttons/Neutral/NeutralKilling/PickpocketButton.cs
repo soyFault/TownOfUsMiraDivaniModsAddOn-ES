@@ -36,7 +36,7 @@ namespace DivaniMods.Buttons.Neutral.NeutralKilling;
 
 public class PickpocketButton : TownOfUsButton
 {
-    public override string Name => "Pickpocket";
+    public override string Name => MiraLocaleManager.Get("DivaniMods.Role.Thief.Ability.Pickpocket");
     public override float Cooldown => OptionGroupSingleton<ThiefOptions>.Instance.PickpocketCooldown.Value;
     public override float EffectDuration => OptionGroupSingleton<ThiefOptions>.Instance.PickpocketDuration.Value;
     public override int MaxUses => (int)OptionGroupSingleton<ThiefOptions>.Instance.MaxStolenModifiers.Value;

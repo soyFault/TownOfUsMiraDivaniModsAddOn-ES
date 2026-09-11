@@ -17,11 +17,23 @@
     <string name="DiedToWatcher">Observado</string>
     <string name="DiedToThief">Robado</string>
     <string name="DivaniMods.DeathReason.Retaliated">Represalia</string>
+<!-- Strings no categorizadas -->
     <string name="DivaniLocalSettingDisableRainbowComms">Desactivar Comms arcoíris</string>
     <string name="DivaniLocalSettingDisableDemoAlternatingColors">Desactivar colores alternos del Demoledor</string>
     <string name="DivaniNeutralEvilWonSelf">¡Cumpliste tu objetivo como [role]!</string>
     <string name="DivaniNeutralEvilTormentFeedback">Puedes matar a uno más antes de continuar.</string>
     <string name="DivaniNeutralEvilWonOther">¡[player] se retiró victorioso como [role]!</string>
+    <string name="WikiSettingsDivaniModsTitle">Ajustes de DivaniMods</string>
+    <string name="DivaniTermsTitle">Símbolos de DivaniMods</string>
+    <string name="DivaniTermsDesc">Estos son los símbolos personalizados de DivaniMods. • Los jugadores infectados (Médico de la Peste) se marcan con &lt;b&gt;&lt;color=#FFC000&gt;µ&lt;/color&gt;&lt;/b&gt; • Los asesinos provocados (Inocente) se marcan con &lt;b&gt;&lt;color=#FF8DA8&gt;⊕&lt;/color&gt;&lt;/b&gt; • Los jugadores marcados por el Localizador se muestran con &lt;b&gt;&lt;color=#DDAB99&gt;※&lt;/color&gt;&lt;/b&gt; • Los enamorados provisionales (Cupido) se marcan con &lt;b&gt;&lt;color=#DE7D7F&gt;♡&lt;/color&gt;&lt;/b&gt; • Los enamorados (Cupido) se marcan con &lt;b&gt;&lt;color=#DE7D7F&gt;♥&lt;/color&gt;&lt;/b&gt;</string>
+    <string name="DivaniMods.RoundChat.Lover.Switch">Chat de Enamorados activo. Pulsa el botón para cambiar.</string>
+    <string name="DivaniMods.RoundChat.Telecom.Switch">Chat de Telecom activo. Pulsa el botón para cambiar.</string>
+    <string name="DivaniMods.RoundChat.Telecom.Active">Chat de Telecom activo. Los mensajes se enviarán a este chat.</string>
+    <string name="DivaniMods.RoundChat.Lover.Active">Chat de Enamorados activo. Los mensajes se enviarán a este chat.</string>
+    <string name="DivaniMods.Keybind.TeleportPortal1">Teletransportarse al Portal 1</string>
+    <string name="DivaniMods.Keybind.TeleportPortal2">Teletransportarse al Portal 2</string>
+    <string name="DivaniMods.GameOver.BetrayerWins">El Renegado gana</string>
+    <string name="DivaniMods.GameOver.WorkhorseWins">El Laborioso gana</string>
 <!-- ROLES -->
 <!-- TRIPULANTES -->
 <!-- Alma Vengativa -->
@@ -44,6 +56,7 @@
     <string name="DivaniMods.Role.Sentinel.LongDescription">Coloca balizas en salas para rastrear quién pasa por ellas.&#10;Durante las reuniones, podrás ver quién pasó por cada sala vigilada.</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon">Colocar baliza</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description">Coloca una baliza para vigilar la actividad de una sala.</string>
+    <string name="DivaniMods.Role.Sentinel.Notification.BeaconTriggered">Alguien pasó por la Baliza [label] ([room])</string>
     <!-- Opciones del Custodio -->
     <string name="DivaniMods.Options.Sentinel.MaxBeacons">Máx. de balizas</string>
     <string name="DivaniMods.Options.Sentinel.PlaceBeaconCooldown">Recarga de baliza</string>
@@ -56,7 +69,8 @@
     <string name="DivaniMods.Role.Retributionist.MedDescription">Regresa como Alma Vengativa tras morir y véngate de tu asesino para revivir.</string>
     <string name="DivaniMods.Role.Retributionist.LongDescription">Al morir, podrás vengarte de tu asesino.</string>
     <string name="DivaniMods.Role.Retributionist.AdvancedDescription">Al morir, reaparecerás en un ducto aleatorio como Alma Vengativa y tendrás tiempo limitado para encontrar y matar a tu asesino. Si lo logras, revivirás. Si fallas, serás un fantasma normal. Tu asesino no podrá usar ductos ni su habilidad si tiene un rol de Impostor de Ocultamiento.</string>
-
+    <string name="DivaniMods.Role.Retributionist.Notification.FirstDeathShieldBlocked">[player] está protegido por el escudo de primera muerte, así que esta vez no podrás vengarte. Nimo2</string>
+    <string name="DivaniMods.Role.Retributionist.Notification.IndirectAttackBlocked">No te atacaron directamente, así que esta vez no podrás vengarte. Nimo2</string>
     <!-- Opciones del Retribucionista -->
     <string name="DivaniMods.Options.Retributionist.RevengeTimer.Skeld">Tiempo de venganza (Skeld)</string>
     <string name="DivaniMods.Options.Retributionist.RevengeTimer.MiraHQ">Tiempo de venganza (MIRA HQ)</string>
@@ -90,6 +104,8 @@
     <string name="DivaniMods.Role.Mage.Button.Shielding">PROTEGIENDO</string>
     <string name="DivaniMods.Role.Mage.Button.Cloaking">OCULTANDO</string>
     <string name="DivaniMods.Role.Mage.Notification.CastIllusion">¡Lanzaste Ilusión sobre [player]!</string>
+    <string name="DivaniMods.Role.Mage.Notification.EnergizedGain">¡El Mago te Energizó y te dio un uso adicional de [ability]!</string>
+    <string name="DivaniMods.Role.Mage.Notification.EnergizedLose">¡El Mago te Energizó y te quitó un uso de [ability]!</string>
     <!-- Opciones del Mago -->
     <string name="DivaniMods.Options.Mage.SpellCooldown">Recarga de hechizos</string>
     <string name="DivaniMods.Options.Mage.MaxShockShieldUses">Máx. usos de Escudo</string>
@@ -163,6 +179,8 @@
     <string name="DivaniMods.Role.Clockstopper.Tab.Egotist">¡Usa tus reinicios para sabotear a la Tripulación!</string>
     <string name="DivaniMods.Role.Clockstopper.Tab.Impostor">¡Reinicia las recargas de los no Impostores!</string>
     <string name="DivaniMods.Role.Clockstopper.Tab.Lover">¡Reinicia todas las recargas excepto las de tu pareja!</string>
+    <string name="DivaniMods.Role.Clockstopper.Notification.SelfReset">Completaste [tasks] tareas más. Se reiniciaron las recargas.</string>
+    <string name="DivaniMods.Role.Clockstopper.Notification.ResetByClockstopper">El Cronofreno reinició tu recarga.</string>
     <!-- Opciones del Cronofreno -->
     <string name="DivaniMods.Options.Clockstopper.TasksPerReset">Tareas por reinicio</string>
     <string name="DivaniMods.Options.Clockstopper.ResetNeutralBenign">Reiniciar Neutrales Benignos</string>
@@ -250,6 +268,9 @@
     <string name="DivaniMods.Role.Telecom.Tab.NoActiveTransmission">Sin transmisión activa</string>
     <string name="DivaniMods.Role.Telecom.Chat.Name">[player] (chat de Telecom)</string>
     <string name="DivaniMods.Role.Telecom.Ability.Transmit">Transmitir</string>
+    <string name="DivaniMods.Role.Telecom.Button.Transmitting">Transmitiendo</string>
+    <string name="DivaniMods.Role.Telecom.Chat.Label">Chat de Telecom</string>
+    <string name="DivaniMods.Role.Telecom.Chat.UnderControl">¡Estás bajo control! No puedes enviar tu mensaje.</string>
     <!-- Opciones de Telecom -->
     <string name="DivaniMods.Options.Telecom.Anonymous">Telecom es anónimo</string>
     <string name="DivaniMods.Options.Telecom.TargetSelection">Elegir objetivo</string>
@@ -263,6 +284,8 @@
     <string name="DivaniMods.Role.Revenant.Description">Mata por los Impostores desde el más allá.</string>
     <string name="DivaniMods.Role.Revenant.MedDescription">Regresa de la muerte para ayudar a los Impostores, pero evita que te atrapen.</string>
     <string name="DivaniMods.Role.Revenant.LongDescription">Fuiste invocado como el Retornado de los Impostores. Mata y usa ductos, pero cualquiera puede hacerte descansar.&#10;Al quedar cuatro jugadores, descansarás.</string>
+    <string name="DivaniMods.Role.Revenant.Notification.FinalFour">Quedan cuatro jugadores: tu Retornado regresa al descanso.</string>
+
 <!-- Demorador -->
     <string name="DivaniMods.Role.Cunctator">Demorador</string>
     <string name="DivaniMods.Role.Cunctator.Description">¡Retrasa los cuerpos!</string>
@@ -278,6 +301,7 @@
     <string name="DivaniMods.Role.Mosquito.LongDescription">Lanza un mosquito que vuela hacia un objetivo&#10;y lo mata de una picadura. ¡Cualquiera puede aplastarlo!</string>
     <string name="DivaniMods.Role.Mosquito.Ability.Sting">Picar</string>
     <string name="DivaniMods.Role.Mosquito.Ability.Sting.Description">Lanza un mosquito que vuela hacia un objetivo y lo mata de una picadura. Cualquiera puede aplastarlo al hacer clic o tocarlo.</string>
+    <string name="DivaniMods.Role.Mosquito.Notification.Stung">Tu mosquito picó a [player]</string>
     <!-- Opciones del Mosquito -->
     <string name="DivaniMods.Options.Mosquito.TargetMode">Selección de objetivo</string>
     <string name="DivaniMods.Options.Mosquito.TargetMode.Furthest">Más lejano</string>
@@ -317,7 +341,6 @@
     <string name="DivaniMods.Role.Recruiter.Ability.ChangeRole">Cambiar rol</string>
     <string name="DivaniMods.Role.Recruiter.Ability.ChangeRole.Description">Si está activado, elige otro rol de Impostor tras reclutar con éxito.</string>
     <string name="DivaniMods.Notification.NoImpostorRolesAvailable">No hay roles de Impostor disponibles.</string>
-
     <!-- Opciones del Reclutador -->
     <string name="DivaniMods.Options.Recruiter.RecruitedBecomesAssassin">Reclutado obtiene Asesino</string>
     <string name="DivaniMods.Options.Recruiter.RecruiterCanChangeRole">Cambiar rol tras reclutar</string>
@@ -333,7 +356,6 @@
     <string name="DivaniMods.Role.Recruit.LongDescription">El Reclutador te convirtió en Impostor.&#10;Usa Cambiar rol para elegir entre tres roles de Impostor.</string>
     <string name="DivaniMods.Role.Recruit.Ability.ChangeRole">Cambiar rol</string>
     <string name="DivaniMods.Role.Recruit.Ability.ChangeRole.Description">Elige uno de tres roles de Impostor al azar para convertirte en él.</string>
-
 <!-- Invocador -->
     <string name="DivaniMods.Role.Summoner">Invocador</string>
     <string name="DivaniMods.Role.Summoner.Description">¡Recluta aliados muertos!</string>
@@ -345,6 +367,7 @@
     <string name="DivaniMods.Role.Summoner.Tab.SummonActive">Invocación activa</string>
     <string name="DivaniMods.Role.Summoner.Ability.Summon">Invocar</string>
     <string name="DivaniMods.Role.Summoner.Ability.Summon.Description">En una reunión, marca a un jugador muerto para que sea Retornado en la próxima ronda.</string>
+    <string name="DivaniMods.Role.Summoner.Notification.FinalFour">Quedan cuatro jugadores: ya no puedes invocar a un Retornado.</string>
     <!-- Opciones del Invocador -->
     <string name="DivaniMods.Options.Summoner.KillsRequiredForSummon">Muertes para invocar</string>
     <string name="DivaniMods.Options.Summoner.RevenantKillCooldown">Recarga de Matar</string>
@@ -357,6 +380,9 @@
     <string name="DivaniMods.Role.Councillor.MedDescription">Obtén votos extra con tus asesinatos para usarlos en la próxima reunión.</string>
     <string name="DivaniMods.Role.Councillor.LongDescription">Cada asesinato te otorga votos extra&#10;para usarlos en la próxima reunión.</string>
     <string name="DivaniMods.Role.Councillor.Tab.ExtraVotes">Votos extra en próxima reunión: +[votes]</string>
+    <string name="DivaniMods.Role.Councillor.Notification.KilledKnightedMayor">¡Mataste a un Alcalde Caballero y obtuviste [votes] votos extra esta ronda!</string>
+    <string name="DivaniMods.Role.Councillor.Notification.KilledMayor">¡Mataste a un Alcalde y obtuviste [votes] votos extra esta ronda!</string>
+    <string name="DivaniMods.Role.Councillor.Notification.KilledKnightedPlayer">¡Mataste a un Caballero y obtuviste [votes] votos extra esta ronda!</string>
     <!-- Opciones del Concejal -->
     <string name="DivaniMods.Options.Councillor.GainsAllVotes">Obtener votos de Caballeros y Alcaldes</string>
 <!-- Bloqueador -->
@@ -364,8 +390,11 @@
     <string name="DivaniMods.Role.Deadlock.Description">¡Bloquea las tareas!</string>
     <string name="DivaniMods.Role.Deadlock.MedDescription">Desactiva temporalmente todas las tareas de los Tripulantes con Bloqueo.</string>
     <string name="DivaniMods.Role.Deadlock.LongDescription">Usa Bloqueo para desactivar temporalmente&#10;las tareas de todos los Tripulantes.</string>
-    <string name="DivaniMods.Role.Deadlock.Ability.Lockdown">Bloqueo</string>
+    <string name="DivaniMods.Role.Deadlock.Ability.Lockdown">BLOQUEAR</string>
     <string name="DivaniMods.Role.Deadlock.Ability.Lockdown.Description">Desactiva temporalmente todas las tareas de los Tripulantes.</string>
+    <string name="DivaniMods.Role.Deadlock.Button.Unlock">DESBLOQUEAR</string>
+    <string name="DivaniMods.Role.Deadlock.Timer.Lockdown">BLOQUEO</string>
+
     <!-- Opciones del Bloqueador -->
     <string name="DivaniMods.Options.Deadlock.LockdownDuration">Duración del Bloqueo</string>
     <string name="DivaniMods.Options.Deadlock.LockdownCooldown">Recarga del Bloqueo</string>
@@ -420,6 +449,29 @@
     <string name="DivaniMods.Role.Demolitionist.Ability.Defuse">Desactivar</string>
     <string name="DivaniMods.Role.Demolitionist.Ability.Defuse.Description">Desactiva la bomba antes de que explote.</string>
     <string name="DivaniMods.Role.Demolitionist.Progress.SuccessfulSabotages">Sabotajes exitosos: [count]/[needed]</string>
+    <string name="DivaniMods.Role.Demolitionist.Button.Defusing">DESACTIVANDO</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.Defusing">Desactivando...</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.DefuseTooFar">¡Desactivación cancelada: estás demasiado lejos del sabotaje!</string>
+    <string name="DivaniMods.Role.Demolitionist.Button.Planting">PLANTANDO</string>
+    <string name="DivaniMods.Role.Demolitionist.Button.Arming">ARMANDO</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.Planting">Plantando sabotaje...</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.PlantTooFar">¡Plantado cancelado: estás demasiado lejos de la consola!</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.Arming">Bomba armándose en [seconds]s...</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.CancelledBySabotage">Plantado cancelado: comenzó un sabotaje de los Impostores.</string>
+    <string name="DivaniMods.Role.Demolitionist.Numpad.Success">OK</string>
+    <string name="DivaniMods.Role.Demolitionist.Numpad.Incorrect">Error</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.EmergencyDuringSabotage">No puedes convocar una reunión de emergencia durante un sabotaje.</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.SabotageActive">Sabotaje del Demoledor activo&#10;Ubicación: [location]</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.SabotageDefused">Sabotaje del Demoledor desactivado&#10;Ubicación: [location]</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.Exploded">El Demoledor hizo explotar [location] ([count]/[needed])</string>
+    <string name="DivaniMods.Role.Demolitionist.Notification.GoalReached">El Demoledor hizo explotar [location] — ¡Objetivo alcanzado!</string>
+    <string name="DivaniMods.Role.Demolitionist.Task.SabotageActive">Sabotaje del Demoledor activo&#10;Ubicación: [location]&#10;[seconds]s</string>
+    <string name="DivaniMods.Demolitionist.Utility.Admin">Administración</string>
+    <string name="DivaniMods.Demolitionist.Utility.Lookout">Mirador</string>
+    <string name="DivaniMods.Demolitionist.Utility.Security">Seguridad</string>
+    <string name="DivaniMods.Demolitionist.Utility.Vitals">Signos vitales</string>
+    <string name="DivaniMods.Demolitionist.Utility.DoorLog">Registro de puertas</string>
+    <string name="DivaniMods.Demolitionist.Utility.Unknown">Desconocido</string>
     <!-- Opciones del Demoledor -->
     <string name="DivaniMods.Options.Demolitionist.SabotagesToWin">Sabotajes para ganar</string>
     <string name="DivaniMods.Options.Demolitionist.PlantCooldown">Recarga de Plantar</string>
@@ -485,6 +537,9 @@
     <string name="DivaniMods.Role.PlagueDoctor.Ability.Infect.Description">Infecta directamente a un jugador.</string>
     <string name="DivaniMods.Role.PlagueDoctor.Notification.BecameAmnesiac">Ya no quedan infectados vivos ni tienes infecciones. Te convertiste en [color]Amnésico&lt;/color&gt;.</string>
     <string name="DivaniMods.Role.PlagueDoctor.Notification.InfectionWarning">La peste se propaga. Quedan [count] jugador(es) sin infectar.</string>
+    <string name="DivaniMods.Role.PlagueDoctor.Status.Immunity">Jugadores inmunes a infección indirecta por: [seconds] segundos</string>
+    <string name="DivaniMods.Role.PlagueDoctor.Status.InfectionProgress">[Progreso de infección]</string>
+    <string name="DivaniMods.Role.PlagueDoctor.Status.Infected">INFECTADO</string>
     <!-- Opciones del Médico de la Peste -->
     <string name="DivaniMods.Options.PlagueDoctor.InfectCooldown">Recarga de Infectar</string>
     <string name="DivaniMods.Options.PlagueDoctor.MaxInfections">Máx. infecciones directas</string>
@@ -510,6 +565,11 @@
     <string name="DivaniMods.Role.Frag.Ability.GiveFrag.Description">Dale la granada a un jugador.</string>
     <string name="DivaniMods.Role.Frag.Ability.PassFrag">Pasar granada</string>
     <string name="DivaniMods.Role.Frag.Ability.PassFrag.Description">Mientras tengas la granada, pásasela a otro jugador antes de que explote.</string>
+    <string name="DivaniMods.Role.Frag.Button.Armed">ARMADA</string>
+    <string name="DivaniMods.Role.Frag.Button.Arming">ARMANDO</string>
+    <string name="DivaniMods.Role.Frag.Notification.DefusedByCleric">Un &lt;color=#[clericColor]&gt;Clérigo&lt;/color&gt; desactivó tu bomba Frag</string>
+    <string name="DivaniMods.Role.Frag.Notification.DefusedByYou">¡Desactivaste la bomba &lt;color=#[fragColor]&gt;Frag&lt;/color&gt;!</string>
+    <string name="DivaniMods.Role.Frag.Timer.PassTheFrag">¡PASA LA FRAG!</string>
     <!-- Opciones de Frag -->
     <string name="DivaniMods.Options.Frag.BombTimer">Temporizador de granada</string>
     <string name="DivaniMods.Options.Frag.GiveBombCooldown">Recarga de Dar granada</string>
@@ -526,6 +586,8 @@
     <string name="DivaniMods.Role.Monster.LongDescription">Devora jugadores cercanos para atraparlos.&#10;Si llegas a la próxima reunión, morirán. Si mueres antes, serán liberados.</string>
     <string name="DivaniMods.Role.Monster.Ability.Devour">Devorar</string>
     <string name="DivaniMods.Role.Monster.Ability.Devour.Description">Devora a un jugador para atraparlo. Si mueres antes, será liberado.</string>
+    <string name="DivaniMods.Role.Monster.Notification.Eaten">¡El Monstruo te devoró!</string>
+    <string name="DivaniMods.Role.Monster.Notification.Released">¡El Monstruo te liberó!</string>
     <!-- Opciones del Monstruo -->
     <string name="DivaniMods.Options.Monster.CanVent">Puede usar ductos</string>
     <string name="DivaniMods.Options.Monster.DevourAnimVisibleToEveryone">Animación visible para todos</string>
@@ -573,6 +635,14 @@
     <string name="DivaniMods.Role.Watcher.Ability.Watch.Description">Inicia Luz Verde y luego Luz Roja. Quien se mueva durante Luz Roja tras el tiempo de gracia morirá. Los jugadores en un Duelo o invisibles no serán afectados.</string>
     <string name="DivaniMods.Role.Watcher.Ability.Kill">Matar</string>
     <string name="DivaniMods.Role.Watcher.Ability.Kill.Description">Mata a un jugador cercano.</string>
+    <string name="DivaniMods.Role.Watcher.Button.Watching">OBSERVANDO</string>
+    <string name="DivaniMods.Role.Watcher.Notification.MovementDetected">¡Movimiento detectado!</string>
+    <string name="DivaniMods.Role.Watcher.Notification.InvisibleExempt">Mientras seas invisible, no te afectará.</string>
+    <string name="DivaniMods.Role.Watcher.Notification.DuelExempt">Estás en un Duelo y no te afectará.</string>
+    <string name="DivaniMods.Role.Watcher.Notification.GhostExempt">Los roles fantasma como tú no se ven afectados.</string>
+    <string name="DivaniMods.Role.Watcher.Notification.RedLightGreenLight">Luz Roja, Luz Verde</string>
+    <string name="DivaniMods.Role.Watcher.Timer.GreenLight">LUZ VERDE</string>
+    <string name="DivaniMods.Role.Watcher.Timer.RedLight">LUZ ROJA</string>
     <!-- Opciones del Observador -->
     <string name="DivaniMods.Options.Watcher.GreenLightMinDuration">Duración mín. de Luz Verde</string>
     <string name="DivaniMods.Options.Watcher.GreenLightMaxDuration">Duración máx. de Luz Verde</string>
@@ -605,6 +675,14 @@
     <string name="DivaniMods.Role.Duelist.Tab.DuelsLost">Duelos perdidos ([losses]/[needed])</string>
     <string name="DivaniMods.Role.Duelist.Notification.YouWon">¡Ganaste como Duelista al conseguir suficientes victorias!</string>
     <string name="DivaniMods.Role.Duelist.Notification.PlayerWon">¡El Duelista, [player], ganó tras conseguir suficientes victorias!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.VictoryPending">¡Ganaste suficientes duelos! Ya no puedes batirte en duelo. ¡La victoria te espera!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.Challenged">¡El Duelista te desafió a un duelo! ¡Demuéstrale de qué estás hecho!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.DuelStarted">Comenzó tu duelo contra [player]. ¡Sin piedad!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.ReturningSingular">Regresarás al mapa en [seconds] segundo</string>
+    <string name="DivaniMods.Role.Duelist.Notification.ReturningPlural">Regresarás al mapa en [seconds] segundos</string>
+    <string name="DivaniMods.Role.Duelist.Notification.WonDuel">¡Ganaste el duelo!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.LostDuel">¡Perdiste el duelo!</string>
+    <string name="DivaniMods.Role.Duelist.Notification.Draw">¡Choque! Ambos atacaron al mismo tiempo. El duelo termina en empate.</string>
     <!-- Opciones del Duelista -->
     <string name="DivaniMods.Options.Duelist.DuelCooldown">Recarga de Duelo</string>
     <string name="DivaniMods.Options.Duelist.DuelSpeed">Velocidad en duelo</string>
@@ -660,6 +738,7 @@
     <string name="DivaniMods.Modifier.BetrayerRevealed.Notification.Impostors">¡[player] los ha traicionado todo este tiempo! Maten al &lt;color=[color]&gt;Renegado&lt;/color&gt; antes de que les robe la victoria.</string>
 <!-- Trampa para Osos -->
     <string name="DivaniMods.Modifier.BearTrap">Trampa para Osos</string> <string name="DivaniMods.Modifier.BearTrap.IntroInfo">Atrapa a tu asesino al morir.</string> <string name="DivaniMods.Modifier.BearTrap.Description">Al morir, tu asesino queda inmóvil por [seconds] segundos y no puede reportar tu cuerpo.</string>
+    <string name="DivaniMods.Modifier.BearTrap.Notification.Caught">Una Trampa para Osos te atrapó durante [seconds] segundos</string>
     <!-- Opciones de Trampa para Osos -->
     <string name="DivaniMods.Options.BearTrap.FreezeDuration">Duración de inmovilización</string>
 <!-- Punto Ciego -->
@@ -692,6 +771,8 @@
     <string name="DivaniMods.Modifier.Sprout.Description">Usa Recolectar cerca de un cadáver para obtener al azar uno de sus modificadores. Solo puede usarse una vez.</string>
     <string name="DivaniMods.Modifier.Sprout.Ability.Collect">Recolectar</string>
     <string name="DivaniMods.Modifier.Sprout.Ability.Collect.Description">Úsalo cerca de un cadáver para obtener al azar uno de sus modificadores.</string>
+    <string name="DivaniMods.Modifier.Sprout.Notification.NoModifiersAvailable">¡No hay nuevos modificadores disponibles!</string>
+    <string name="DivaniMods.Modifier.Sprout.Notification.Collected">¡Obtuviste [modifier]!</string>
 <!-- Fortachón -->
     <string name="DivaniMods.Modifier.Strong">Fortachón</string>
     <string name="DivaniMods.Modifier.Strong.IntroInfo">No pueden adivinarte en reuniones.</string>
@@ -722,6 +803,7 @@
     Ataques resistidos: [survived] / [max]</string>
     <!-- Opciones de Blindado -->
     <string name="DivaniMods.Options.Armored.AttacksToSurvive">Ataques que resiste</string>
+    <string name="DivaniMods.Modifier.Armored.Notification.Broken">¡Tu armadura se rompió!</string>
 <!-- Frágil -->
     <string name="DivaniMods.Modifier.Fragile">Frágil</string>
     <string name="DivaniMods.Modifier.Fragile.IntroInfo">Puedes romperte si alguien interactúa contigo...</string>
@@ -750,6 +832,7 @@
     <string name="DivaniMods.Modifier.Shuffle.AdvancedDescription">¡Mezcla las posiciones de todos los jugadores!</string>
     <string name="DivaniMods.Modifier.Shuffle.Ability.Shuffle">Mezclar</string>
     <string name="DivaniMods.Modifier.Shuffle.Ability.Shuffle.Description">Teletransporta a cada jugador vivo a la posición de otro al azar.</string>
+    <string name="DivaniMods.Modifier.Shuffle.Notification.Shuffled">¡Todos fueron mezclados!</string>
     <!-- Opciones de Revoltijo -->
     <string name="DivaniMods.Options.Shuffle.ShuffleUses">Usos de Mezclar</string>
     <string name="DivaniMods.Options.Shuffle.ShuffleCooldown">Recarga de Mezclar</string>
@@ -762,6 +845,9 @@
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability">Inserción Táctica</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Description">Marca tu posición para reaparecer ahí tras la próxima reunión.</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">Reapareciste en tu Inserción Táctica.</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Mark">Inserción Táctica</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.PositionMarked">Posición marcada</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">Apareciste en la ubicación de tu Inserción Táctica</string>
     <!-- Opciones de Inserción Táctica -->
     <string name="DivaniMods.Options.TacticalInsertion.Uses">Usos de Inserción Táctica</string>
     <string name="DivaniMods.Options.TacticalInsertion.Cooldown">Recarga de Inserción Táctica</string>
@@ -773,6 +859,12 @@
     <string name="DivaniMods.Modifier.UAV.Description">Solicita un UAV. Mientras esté activo, abre el mapa para ver la ubicación de todos.</string>
     <string name="DivaniMods.Modifier.UAV.Ability.CallUAV">Solicitar UAV</string>
     <string name="DivaniMods.Modifier.UAV.Ability.CallUAV.Description">Solicita un UAV para ver la ubicación de los demás jugadores.</string>
+    <string name="DivaniMods.Modifier.UAV.Button.Active">UAV ACTIVO</string>
+    <string name="DivaniMods.Modifier.UAV.Notification.FriendlyActive">UAV aliado activo</string>
+    <string name="DivaniMods.Modifier.UAV.Notification.FriendlyOverhead">UAV aliado en el aire</string>
+    <string name="DivaniMods.Modifier.UAV.Notification.EnemyActive">UAV enemigo activo</string>
+    <string name="DivaniMods.Modifier.UAV.Notification.EnemyOverhead">UAV enemigo en el aire</string>
+    <string name="DivaniMods.Modifier.UAV.Notification.SignalLost">Señal del UAV perdida</string>
     <!-- Opciones de UAV -->
     <string name="DivaniMods.Options.UAV.Uses">Usos del UAV</string>
     <string name="DivaniMods.Options.UAV.Duration">Duración del UAV</string>

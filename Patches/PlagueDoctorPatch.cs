@@ -5,6 +5,7 @@ using MiraAPI.Events;
 using MiraAPI.Events.Vanilla.Gameplay;
 using MiraAPI.Events.Vanilla.Meeting;
 using MiraAPI.GameOptions;
+using MiraAPI.Translation;
 using TownOfUs.Events;
 using TownOfUs.Modifiers;
 using DivaniMods.Options;
@@ -158,10 +159,22 @@ public static class PlagueDoctorPatch
 
         if (PlagueDoctorRole.ImmunityTimer > 0f)
         {
-            text += $"<color=#00FF00>Players immune to non-direct infection for: {PlagueDoctorRole.ImmunityTimer:F1}seconds</color>\n";
+            var immunityText = MiraLocaleManager
+                .Get("DivaniMods.Role.PlagueDoctor.Status.Immunity")
+                .Replace(
+                    "[seconds]",
+                    PlagueDoctorRole.ImmunityTimer.ToString("F1"));
+
+            text += $"<color=#00FF00>{immunityText}</color>\n";
         }
 
-        text += "<color=#FFC000>[Infection Progress]</color>\n";
+       var progressText = MiraLocaleManager.Get(
+            "DivaniMods.Role.PlagueDoctor.Status.InfectionProgress");
+
+        text += $"<color=#FFC000>{progressText}</color>\n";
+
+        var infectedText = MiraLocaleManager.Get(
+            "DivaniMods.Role.PlagueDoctor.Status.Infected");
 
         var entries = new List<string>();
         foreach (var p in PlayerControl.AllPlayerControls)
@@ -177,7 +190,7 @@ public static class PlagueDoctorPatch
 
             if (infected)
             {
-                entry += "<color=#FF0000>INFECTED</color>";
+                entry += $"<color=#FF0000>{infectedText}</color>";
             }
             else
             {
