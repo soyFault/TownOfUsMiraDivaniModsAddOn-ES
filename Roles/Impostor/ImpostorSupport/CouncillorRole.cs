@@ -76,7 +76,7 @@ public sealed class CouncillorRole(IntPtr cppPtr)
         var extra = CouncillorEvents.GetExtraVotes(Player.PlayerId);
         stringB.AppendLine(
             $"<b>{MiraLocaleManager.Get("DivaniMods.Role.Councillor.Tab.ExtraVotes")
-                .Replace("[votes]", extra.ToString(TownOfUsPlugin.Culture))}</b>");
+                .Replace("<votes>", extra.ToString(TownOfUsPlugin.Culture))}</b>");
         return stringB;
     }
 }

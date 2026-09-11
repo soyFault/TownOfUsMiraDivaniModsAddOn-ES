@@ -335,10 +335,10 @@ public sealed class MoleRole(IntPtr cppPtr)
                 duration == 1
                     ? "DivaniMods.Role.Mole.Tab.VentDuration.OneRound"
                     : "DivaniMods.Role.Mole.Tab.VentDuration.Rounds")
-                .Replace("[rounds]", duration.ToString());
+                .Replace("<rounds>", duration.ToString());
         stringB.Append(
             $"\n<b><size=60%>{MiraLocaleManager.Get("DivaniMods.Role.Mole.Tab.Note")
-                .Replace("[text]", lifeText)}</size></b>");
+                .Replace("<text>", lifeText)}</size></b>");
 
         var visText = opt.VentVisibility switch
         {

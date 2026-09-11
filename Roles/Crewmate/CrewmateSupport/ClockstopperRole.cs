@@ -76,8 +76,8 @@ public sealed class ClockstopperRole(IntPtr cppPtr)
         var stringB = ITownOfUsRole.SetNewTabText(this);
         stringB.AppendLine(
             $"{RoleColor.ToTextColor()}<b>{MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Tab.ResetProgress")
-            .Replace("[progress]", ClockstopperEvents.GetProgress(Player).ToString())
-            .Replace("[needed]", ClockstopperEvents.GetNeeded().ToString())}</b></color>");
+            .Replace("<progress>", ClockstopperEvents.GetProgress(Player).ToString())
+            .Replace("<needed>", ClockstopperEvents.GetNeeded().ToString())}</b></color>");
             if (Player.HasModifier<EgotistModifier>())
             {
                 stringB.AppendLine($"<b>{MiraLocaleManager.Get("DivaniMods.Role.Clockstopper.Tab.Egotist")}</b>");

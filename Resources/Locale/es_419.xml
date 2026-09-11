@@ -23,6 +23,7 @@
     <string name="DivaniNeutralEvilWonSelf">¡Cumpliste tu objetivo como [role]!</string>
     <string name="DivaniNeutralEvilTormentFeedback">Puedes matar a uno más antes de continuar.</string>
     <string name="DivaniNeutralEvilWonOther">¡[player] se retiró victorioso como [role]!</string>
+    <string name="DivaniMods.Common.Unknown">Unknown</string>
     <string name="WikiSettingsDivaniModsTitle">Ajustes de DivaniMods</string>
     <string name="DivaniTermsTitle">Símbolos de DivaniMods</string>
     <string name="DivaniTermsDesc">Estos son los símbolos personalizados de DivaniMods. • Los jugadores infectados (Médico de la Peste) se marcan con &lt;b&gt;&lt;color=#FFC000&gt;µ&lt;/color&gt;&lt;/b&gt; • Los asesinos provocados (Inocente) se marcan con &lt;b&gt;&lt;color=#FF8DA8&gt;⊕&lt;/color&gt;&lt;/b&gt; • Los jugadores marcados por el Localizador se muestran con &lt;b&gt;&lt;color=#DDAB99&gt;※&lt;/color&gt;&lt;/b&gt; • Los enamorados provisionales (Cupido) se marcan con &lt;b&gt;&lt;color=#DE7D7F&gt;♡&lt;/color&gt;&lt;/b&gt; • Los enamorados (Cupido) se marcan con &lt;b&gt;&lt;color=#DE7D7F&gt;♥&lt;/color&gt;&lt;/b&gt;</string>
@@ -57,6 +58,13 @@
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon">Colocar baliza</string>
     <string name="DivaniMods.Role.Sentinel.Ability.PlaceBeacon.Description">Coloca una baliza para vigilar la actividad de una sala.</string>
     <string name="DivaniMods.Role.Sentinel.Notification.BeaconTriggered">Alguien pasó por la Baliza [label] ([room])</string>
+    <string name="DivaniMods.Role.Sentinel.Notification.PlacingBeacon">Colocando baliza...</string>
+    <string name="DivaniMods.Role.Sentinel.Notification.BeaconPlaced">¡Baliza [beacon] colocada en [room]!</string>
+    <string name="DivaniMods.Role.Sentinel.Report.Title">Informe de balizas</string>
+    <string name="DivaniMods.Role.Sentinel.Report.NoActivity">Baliza [beacon] ([room]): Sin actividad.</string>
+    <string name="DivaniMods.Role.Sentinel.Report.Activity">Baliza [beacon] ([room]): [players]</string>
+    <string name="DivaniMods.Role.Sentinel.Report.Bodies">Baliza [beacon] ([room]): [players]</string>
+    <string name="DivaniMods.Role.Sentinel.Report.BodiesTitle">Cuerpos encontrados en tus salas vigiladas</string>
     <!-- Opciones del Custodio -->
     <string name="DivaniMods.Options.Sentinel.MaxBeacons">Máx. de balizas</string>
     <string name="DivaniMods.Options.Sentinel.PlaceBeaconCooldown">Recarga de baliza</string>

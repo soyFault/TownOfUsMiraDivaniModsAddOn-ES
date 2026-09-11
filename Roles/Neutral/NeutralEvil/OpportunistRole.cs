@@ -65,7 +65,7 @@ public sealed class OpportunistRole(IntPtr cppPtr)
         var maxVotes = (int)OptionGroupSingleton<OpportunistOptions>.Instance.MaxVotesPerMeeting.Value;
 
         return MiraLocaleManager.Get("DivaniMods.Role.Opportunist.AdvancedDescription")
-            .Replace("[max]", maxVotes.ToString(TownOfUsPlugin.Culture))
+            .Replace("<max>", maxVotes.ToString(TownOfUsPlugin.Culture))
             + MiscUtils.AppendOptionsText(GetType());
     }
 
@@ -128,8 +128,8 @@ public sealed class OpportunistRole(IntPtr cppPtr)
             var capped = Math.Min(VotesCollected, needed);
 
             return MiraLocaleManager.Get("DivaniMods.Role.Opportunist.Progress.VotesCollected")
-                .Replace("[count]", capped.ToString(TownOfUsPlugin.Culture))
-                .Replace("[needed]", needed.ToString(TownOfUsPlugin.Culture));
+                .Replace("<count>", capped.ToString(TownOfUsPlugin.Culture))
+                .Replace("<needed>", needed.ToString(TownOfUsPlugin.Culture));
         }
     }
 
@@ -141,13 +141,13 @@ public sealed class OpportunistRole(IntPtr cppPtr)
         var maxPerMeeting = (int)OptionGroupSingleton<OpportunistOptions>.Instance.MaxVotesPerMeeting.Value;
         var capped = Math.Min(VotesCollected, needed);
         var votesText = MiraLocaleManager.Get("DivaniMods.Role.Opportunist.Progress.VotesCollected")
-            .Replace("[count]", capped.ToString(TownOfUsPlugin.Culture))
-            .Replace("[needed]", needed.ToString(TownOfUsPlugin.Culture));
+            .Replace("<count>", capped.ToString(TownOfUsPlugin.Culture))
+            .Replace("<needed>", needed.ToString(TownOfUsPlugin.Culture));
 
         stringB.AppendLine($"<b>{votesText}</b>");
 
         var maxVotesText = MiraLocaleManager.Get("DivaniMods.Role.Opportunist.Tab.MaxVotesPerMeeting")
-            .Replace("[max]", maxPerMeeting.ToString(TownOfUsPlugin.Culture));
+            .Replace("<max>", maxPerMeeting.ToString(TownOfUsPlugin.Culture));
 
         stringB.AppendLine($"<b>{maxVotesText}</b>");
 

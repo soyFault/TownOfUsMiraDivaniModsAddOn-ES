@@ -490,7 +490,7 @@ public sealed class PlagueDoctorRole(IntPtr cppPtr)
 
         Coroutines.Start(MiscUtils.CoFlash(TownOfUsColors.Amnesiac));
         var message = MiraLocaleManager.Get("DivaniMods.Role.PlagueDoctor.Notification.BecameAmnesiac")
-            .Replace("[color]", TownOfUsColors.Amnesiac.ToTextColor());
+            .Replace("<color>", TownOfUsColors.Amnesiac.ToTextColor());
 
         var notification = MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             message,
@@ -530,7 +530,7 @@ public sealed class PlagueDoctorRole(IntPtr cppPtr)
 
         InfectionWarningShown = true;
         var message = MiraLocaleManager.Get("DivaniMods.Role.PlagueDoctor.Notification.InfectionWarning")
-            .Replace("[count]", uninfectedLeft.ToString(TownOfUsPlugin.Culture));
+            .Replace("<count>", uninfectedLeft.ToString(TownOfUsPlugin.Culture));
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#FFC000>{message}</color></b>",

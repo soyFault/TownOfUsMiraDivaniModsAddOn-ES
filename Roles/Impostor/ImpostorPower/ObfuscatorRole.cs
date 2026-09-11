@@ -70,15 +70,15 @@ public sealed class ObfuscatorRole(IntPtr cppPtr)
         var killsPer = (int)OptionGroupSingleton<ObfuscatorOptions>.Instance.KillsPerExtraCharge.Value;
         sb.AppendLine(
             $"<b>{MiraLocaleManager.Get("DivaniMods.Role.Obfuscator.Tab.Charges")
-                .Replace("[charges]", ChargesRemaining.ToString(TownOfUsPlugin.Culture))}</b>");
+                .Replace("<charges>", ChargesRemaining.ToString(TownOfUsPlugin.Culture))}</b>");
 
         if (killsPer > 0)
         {
             var capped = Math.Min(KillsSinceLastCharge, killsPer);
             sb.AppendLine(
                 $"<b>{MiraLocaleManager.Get("DivaniMods.Role.Obfuscator.Tab.KillsTowardCharge")
-                    .Replace("[kills]", capped.ToString(TownOfUsPlugin.Culture))
-                    .Replace("[required]", killsPer.ToString(TownOfUsPlugin.Culture))}</b>");
+                    .Replace("<kills>", capped.ToString(TownOfUsPlugin.Culture))
+                    .Replace("<required>", killsPer.ToString(TownOfUsPlugin.Culture))}</b>");
                 }
         return sb;
     }

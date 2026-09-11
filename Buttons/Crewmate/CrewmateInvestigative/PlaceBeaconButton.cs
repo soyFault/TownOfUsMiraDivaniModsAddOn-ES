@@ -14,7 +14,7 @@ namespace DivaniMods.Buttons.Crewmate.CrewmateInvestigative;
 
 public class PlaceBeaconButton : TownOfUsButton
 {
-    public override string Name => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.Ability.PlaceBeacon");
+    public override string Name => MiraLocaleManager.Get("DivaniMods.Role.Sentinel.Ability.PlaceBeacon", "Place Beacon");
     public override float Cooldown => OptionGroupSingleton<SentinelOptions>.Instance.PlaceBeaconCooldown.Value;
     public override float EffectDuration => OptionGroupSingleton<SentinelOptions>.Instance.PlaceBeaconDuration.Value;
     public override int MaxUses => 0;

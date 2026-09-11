@@ -128,10 +128,10 @@ public sealed class DuelistRole(IntPtr cppPtr)
             var losses = Math.Min(DuelLosses, LossesToDie);
 
             return MiraLocaleManager.Get("DivaniMods.Role.Duelist.Progress.Detailed")
-                .Replace("[wins]", wins.ToString(TownOfUsPlugin.Culture))
-                .Replace("[winsNeeded]", WinsNeeded.ToString(TownOfUsPlugin.Culture))
-                .Replace("[losses]", losses.ToString(TownOfUsPlugin.Culture))
-                .Replace("[lossesNeeded]", LossesToDie.ToString(TownOfUsPlugin.Culture));
+                .Replace("<wins>", wins.ToString(TownOfUsPlugin.Culture))
+                .Replace("<winsNeeded>", WinsNeeded.ToString(TownOfUsPlugin.Culture))
+                .Replace("<losses>", losses.ToString(TownOfUsPlugin.Culture))
+                .Replace("<lossesNeeded>", LossesToDie.ToString(TownOfUsPlugin.Culture));
         }
     }
 
@@ -144,12 +144,12 @@ public sealed class DuelistRole(IntPtr cppPtr)
         var losses = Math.Min(DuelLosses, LossesToDie);
 
         var winsText = MiraLocaleManager.Get("DivaniMods.Role.Duelist.Tab.DuelsWon")
-            .Replace("[wins]", wins.ToString(TownOfUsPlugin.Culture))
-            .Replace("[needed]", WinsNeeded.ToString(TownOfUsPlugin.Culture));
+            .Replace("<wins>", wins.ToString(TownOfUsPlugin.Culture))
+            .Replace("<needed>", WinsNeeded.ToString(TownOfUsPlugin.Culture));
 
         var lossesText = MiraLocaleManager.Get("DivaniMods.Role.Duelist.Tab.DuelsLost")
-            .Replace("[losses]", losses.ToString(TownOfUsPlugin.Culture))
-            .Replace("[needed]", LossesToDie.ToString(TownOfUsPlugin.Culture));
+            .Replace("<losses>", losses.ToString(TownOfUsPlugin.Culture))
+            .Replace("<needed>", LossesToDie.ToString(TownOfUsPlugin.Culture));
 
         stringB.AppendLine($"<b>{winsText}</b>");
         stringB.AppendLine($"<b>{lossesText}</b>");

@@ -105,7 +105,7 @@ public sealed class WorkhorseRole(IntPtr cppPtr)
                  IsRevealTarget(PlayerControl.LocalPlayer))
         {
             Coroutines.Start(MiscUtils.CoFlash(WorkhorseColor, alpha: 0.5f));
-            ShowNotification(MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Notification.FirstListFinished").Replace("[role]", ColoredName));
+            ShowNotification(MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Notification.FirstListFinished").Replace("<role>", ColoredName));
         }
     }
 
@@ -165,8 +165,8 @@ public sealed class WorkhorseRole(IntPtr cppPtr)
         }
 
         ShowNotification(IsEvilTarget(PlayerControl.LocalPlayer)
-            ? MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Notification.AlmostDone.Evil").Replace("[role]", ColoredName)
-            : MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Notification.AlmostDone.Other").Replace("[role]", ColoredName));
+            ? MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Notification.AlmostDone.Evil").Replace("<role>", ColoredName)
+            : MiraLocaleManager.Get("DivaniMods.Role.Workhorse.Notification.AlmostDone.Other").Replace("<role>", ColoredName));
     }
 
     private void RevealOpponents()

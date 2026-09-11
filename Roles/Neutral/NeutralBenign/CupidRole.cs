@@ -149,8 +149,8 @@ public sealed class CupidRole(IntPtr cppPtr)
         _lastKnownCoupleKey = key;
 
         var message = MiraLocaleManager.Get("DivaniMods.Role.Cupid.Notification.NowInLove")
-            .Replace("[player1]", couple[0].Data.PlayerName)
-            .Replace("[player2]", couple[1].Data.PlayerName);
+            .Replace("<player1>", couple[0].Data.PlayerName)
+            .Replace("<player2>", couple[1].Data.PlayerName);
 
         var notif = Helpers.CreateAndShowNotification(
             $"<b>{CupidColor.ToTextColor()}{message}</color></b>",
@@ -376,8 +376,8 @@ public sealed class CupidRole(IntPtr cppPtr)
         if (cupid.AmOwner)
         {
             var message = MiraLocaleManager.Get("DivaniMods.Role.Cupid.Notification.FellInLove")
-                .Replace("[player1]", loverOne.Data.PlayerName)
-                .Replace("[player2]", loverTwo.Data.PlayerName);
+                .Replace("<player1>", loverOne.Data.PlayerName)
+                .Replace("<player2>", loverTwo.Data.PlayerName);
 
             var notif = Helpers.CreateAndShowNotification(
                 $"<b>{CupidColor.ToTextColor()}{message}</color></b>",
@@ -391,9 +391,9 @@ public sealed class CupidRole(IntPtr cppPtr)
             var partner = PlayerControl.LocalPlayer == loverOne ? loverTwo : loverOne;
             var message = OptionGroupSingleton<CupidOptions>.Instance.LoversKnowCupid
                 ? MiraLocaleManager.Get("DivaniMods.Role.Cupid.Notification.CupidMatchedYou")
-                    .Replace("[player]", partner.Data.PlayerName)
+                    .Replace("<player>", partner.Data.PlayerName)
                 : MiraLocaleManager.Get("DivaniMods.Role.Cupid.Notification.YouAreInLove")
-                    .Replace("[player]", partner.Data.PlayerName);
+                    .Replace("<player>", partner.Data.PlayerName);
 
             var notif = Helpers.CreateAndShowNotification(
                 $"<b>{TownOfUsColors.Lover.ToTextColor()}{message}</color></b>",

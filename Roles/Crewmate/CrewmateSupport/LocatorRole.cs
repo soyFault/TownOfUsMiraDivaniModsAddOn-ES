@@ -57,7 +57,7 @@ public sealed class LocatorRole(IntPtr cppPtr)
     {
         var stringB = ITownOfUsRole.SetNewTabText(this);
         stringB.AppendLine($"{RoleColor.ToTextColor()}<b>{MiraLocaleManager.Get("DivaniMods.Role.Locator.Tab.MarksLeft")
-        .Replace("[count]", MarksRemaining.ToString())}</b></color>");
+        .Replace("<count>", MarksRemaining.ToString())}</b></color>");
         return stringB;
     }
 }

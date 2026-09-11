@@ -117,8 +117,8 @@ public sealed class DemolitionistRole(IntPtr cppPtr)
             var capped = Math.Min(DemolitionistSabotageState.SuccessfulSabotages, needed);
 
             return MiraLocaleManager.Get("DivaniMods.Role.Demolitionist.Progress.SuccessfulSabotages")
-                .Replace("[count]", capped.ToString(TownOfUsPlugin.Culture))
-                .Replace("[needed]", needed.ToString(TownOfUsPlugin.Culture));
+                .Replace("<count>", capped.ToString(TownOfUsPlugin.Culture))
+                .Replace("<needed>", needed.ToString(TownOfUsPlugin.Culture));
         }
     }
 
@@ -129,8 +129,8 @@ public sealed class DemolitionistRole(IntPtr cppPtr)
         var needed = (int)OptionGroupSingleton<DemolitionistOptions>.Instance.SabotagesToWin.Value;
         var capped = Math.Min(DemolitionistSabotageState.SuccessfulSabotages, needed);
         var progressText = MiraLocaleManager.Get("DivaniMods.Role.Demolitionist.Progress.SuccessfulSabotages")
-            .Replace("[count]", capped.ToString(TownOfUsPlugin.Culture))
-            .Replace("[needed]", needed.ToString(TownOfUsPlugin.Culture));
+            .Replace("<count>", capped.ToString(TownOfUsPlugin.Culture))
+            .Replace("<needed>", needed.ToString(TownOfUsPlugin.Culture));
 
         stringB.AppendLine($"<b>{progressText}</b>");
         return stringB;

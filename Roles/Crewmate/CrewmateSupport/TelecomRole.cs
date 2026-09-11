@@ -82,7 +82,7 @@ public sealed class TelecomRole(IntPtr cppPtr)
         if (target != null && target.Data != null)
         {
             var transmittingText = MiraLocaleManager.Get("DivaniMods.Role.Telecom.Tab.Transmitting")
-                .Replace("[player]", target.Data.PlayerName);
+                .Replace("<player>", target.Data.PlayerName);
             sb.AppendLine($"{RoleColor.ToTextColor()}<b>{transmittingText}</b></color>");
         }
         else
@@ -346,7 +346,7 @@ public sealed class TelecomRole(IntPtr cppPtr)
         chat.messageSound = SilentClip;
 
         var chatName = MiraLocaleManager.Get("DivaniMods.Role.Telecom.Chat.Name")
-            .Replace("[player]", displayName);
+            .Replace("<player>", displayName);
 
         MiscUtils.AddTeamChat(
             basePlayer,

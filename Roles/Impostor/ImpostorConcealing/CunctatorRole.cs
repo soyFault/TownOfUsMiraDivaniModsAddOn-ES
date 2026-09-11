@@ -37,7 +37,7 @@ public sealed class CunctatorRole(IntPtr cppPtr)
         var delay = OptionGroupSingleton<CunctatorOptions>.Instance?.BodyDelay?.Value;
         var delayText = delay.HasValue
             ? "\n\n" + MiraLocaleManager.Get("DivaniMods.Role.Cunctator.Advanced.BodyDelay")
-                .Replace("[seconds]", delay.Value.ToString("0"))
+                .Replace("<seconds>", delay.Value.ToString("0"))
             : string.Empty;
 
         return RoleLongDescription + delayText + MiscUtils.AppendOptionsText(GetType());

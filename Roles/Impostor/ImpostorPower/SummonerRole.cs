@@ -49,8 +49,8 @@ public sealed class SummonerRole(IntPtr cppPtr)
         var kills = Math.Min(SummonerState.KillsSinceRevenant, req);
         sb.AppendLine(
             $"<b>{MiraLocaleManager.Get("DivaniMods.Role.Summoner.Tab.KillsRequired")
-                .Replace("[kills]", kills.ToString(TownOfUsPlugin.Culture))
-                .Replace("[required]", req.ToString(TownOfUsPlugin.Culture))}</b>");
+                .Replace("<kills>", kills.ToString(TownOfUsPlugin.Culture))
+                .Replace("<required>", req.ToString(TownOfUsPlugin.Culture))}</b>");
         if (RevenantActive())
         {
             sb.AppendLine(TownOfUsPlugin.Culture,

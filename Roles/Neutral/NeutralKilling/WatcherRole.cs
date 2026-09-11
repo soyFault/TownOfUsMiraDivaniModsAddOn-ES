@@ -55,7 +55,7 @@ public sealed class WatcherRole(IntPtr cppPtr)
         if (grace > 0f)
         {
             desc += "\n" + MiraLocaleManager.Get("DivaniMods.Role.Watcher.Advanced.GracePeriod")
-                .Replace("[seconds]", grace.ToString("0.0", TownOfUsPlugin.Culture));
+                .Replace("<seconds>", grace.ToString("0.0", TownOfUsPlugin.Culture));
         }
 
         desc += "\n" + MiraLocaleManager.Get("DivaniMods.Role.Watcher.Advanced.Exceptions");
@@ -73,11 +73,11 @@ public sealed class WatcherRole(IntPtr cppPtr)
         var kills = button != null ? Math.Min(button.KillsTowardCharge, req) : 0;
 
         var chargesText = MiraLocaleManager.Get("DivaniMods.Role.Watcher.Tab.WatchCharges")
-            .Replace("[charges]", charges.ToString(TownOfUsPlugin.Culture));
+            .Replace("<charges>", charges.ToString(TownOfUsPlugin.Culture));
 
         var killsText = MiraLocaleManager.Get("DivaniMods.Role.Watcher.Tab.KillsUntilNextCharge")
-            .Replace("[kills]", kills.ToString(TownOfUsPlugin.Culture))
-            .Replace("[required]", req.ToString(TownOfUsPlugin.Culture));
+            .Replace("<kills>", kills.ToString(TownOfUsPlugin.Culture))
+            .Replace("<required>", req.ToString(TownOfUsPlugin.Culture));
 
         sb.AppendLine($"<b>{chargesText}</b>");
         sb.AppendLine($"<b>{killsText}</b>");
