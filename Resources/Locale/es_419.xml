@@ -847,7 +847,6 @@
     <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">Reapareciste en tu Inserción Táctica.</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Mark">Inserción Táctica</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Notification.PositionMarked">Posición marcada</string>
-    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">Apareciste en la ubicación de tu Inserción Táctica</string>
     <!-- Opciones de Inserción Táctica -->
     <string name="DivaniMods.Options.TacticalInsertion.Uses">Usos de Inserción Táctica</string>
     <string name="DivaniMods.Options.TacticalInsertion.Cooldown">Recarga de Inserción Táctica</string>

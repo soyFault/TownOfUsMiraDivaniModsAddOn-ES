@@ -856,7 +856,6 @@
     <string name="DivaniMods.Modifier.TacticalInsertion.AdvancedDescription">Mark your current position. After the next meeting you respawn at the marked spot instead of the meeting area.</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability">Tactical Insertion</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Description">Mark your current position to respawn there after the next meeting.</string>
-    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">You spawned at the location of your Tactical Insertion</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Mark">Tactical Insertion</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Notification.PositionMarked">Position marked</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">You spawned at the location of your Tactical Insertion</string>
