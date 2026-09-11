@@ -395,6 +395,7 @@
     <string name="DivaniMods.Role.Councillor.Notification.KilledKnightedMayor">You killed a Knighted Mayor and gained [votes] extra votes this round!</string>
     <string name="DivaniMods.Role.Councillor.Notification.KilledMayor">You killed a Mayor and gained [votes] extra votes this round!</string>
     <string name="DivaniMods.Role.Councillor.Notification.KilledKnightedPlayer">You killed a Knighted player and gained [votes] extra votes this round!</string>
+    <string name="DivaniMods.Role.Councillor.Meeting.CurrentVotes">Current votes: [votes]</string>
     <!-- Councillor Options -->
     <string name="DivaniMods.Options.Councillor.GainsAllVotes">Gain the extra Votes from killing Knights and Mayors</string>
 <!-- Deadlock -->

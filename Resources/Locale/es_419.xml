@@ -383,6 +383,7 @@
     <string name="DivaniMods.Role.Councillor.Notification.KilledKnightedMayor">¡Mataste a un Alcalde Caballero y obtuviste [votes] votos extra esta ronda!</string>
     <string name="DivaniMods.Role.Councillor.Notification.KilledMayor">¡Mataste a un Alcalde y obtuviste [votes] votos extra esta ronda!</string>
     <string name="DivaniMods.Role.Councillor.Notification.KilledKnightedPlayer">¡Mataste a un Caballero y obtuviste [votes] votos extra esta ronda!</string>
+    <string name="DivaniMods.Role.Councillor.Meeting.CurrentVotes">Votos actuales: [votes]</string>
     <!-- Opciones del Concejal -->
     <string name="DivaniMods.Options.Councillor.GainsAllVotes">Obtener votos de Caballeros y Alcaldes</string>
 <!-- Bloqueador -->
