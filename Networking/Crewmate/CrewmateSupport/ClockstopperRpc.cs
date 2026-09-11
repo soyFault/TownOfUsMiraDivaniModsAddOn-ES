@@ -39,7 +39,7 @@ public static class ClockstopperRpc
             var perReset = (int)OptionGroupSingleton<ClockstopperOptions>.Instance.TasksPerReset.Value;
             var resetSelfText = MiraLocaleManager
                 .Get("DivaniMods.Role.Clockstopper.Notification.SelfReset")
-                .Replace("[tasks]", perReset.ToString());
+                .Replace("<tasks>", perReset.ToString());
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#{hex}>{resetSelfText}</color></b>",

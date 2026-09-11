@@ -162,7 +162,7 @@ public static class PlagueDoctorPatch
             var immunityText = MiraLocaleManager
                 .Get("DivaniMods.Role.PlagueDoctor.Status.Immunity")
                 .Replace(
-                    "[seconds]",
+                    "<seconds>",
                     PlagueDoctorRole.ImmunityTimer.ToString("F1"));
 
             text += $"<color=#00FF00>{immunityText}</color>\n";

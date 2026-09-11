@@ -78,8 +78,8 @@ public static class SentinelPatch
             var colorHex = ColorUtility.ToHtmlStringRGB(SentinelRole.SentinelColor);
             var text = MiraLocaleManager
                 .Get("DivaniMods.Role.Sentinel.Notification.BeaconTriggered")
-                .Replace("[label]", label.ToString())
-                .Replace("[room]", beacon.RoomName);
+                .Replace("<label>", label.ToString())
+                .Replace("<room>", beacon.RoomName);
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#{colorHex}>{text}</color></b>",

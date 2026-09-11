@@ -313,7 +313,7 @@ public class SproutCollectButton : TownOfUsTargetButton<DeadBody>
         {
             var collectedText = MiraLocaleManager
                 .Get("DivaniMods.Modifier.Sprout.Notification.Collected")
-                .Replace("[modifier]", displayName);
+                .Replace("<modifier>", displayName);
 
             Notify($"<b><color=#7CC85A>{collectedText}</color></b>");
             ButtonRefresher.RefreshAllButtons();

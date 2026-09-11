@@ -213,8 +213,8 @@ public static class BeaconManager
             {
                 var noActivity = MiraLocaleManager
                     .Get("DivaniMods.Role.Sentinel.Report.NoActivity")
-                    .Replace("[beacon]", label.ToString())
-                    .Replace("[room]", beacon.RoomName);
+                    .Replace("<beacon>", label.ToString())
+                    .Replace("<room>", beacon.RoomName);
 
                 sb.AppendLine(noActivity);
             }
@@ -223,9 +223,9 @@ public static class BeaconManager
                 var names = string.Join(", ", beacon.PlayersPassedThrough);
                 var activity = MiraLocaleManager
                     .Get("DivaniMods.Role.Sentinel.Report.Activity")
-                    .Replace("[beacon]", label.ToString())
-                    .Replace("[room]", beacon.RoomName)
-                    .Replace("[players]", names);
+                    .Replace("<beacon>", label.ToString())
+                    .Replace("<room>", beacon.RoomName)
+                    .Replace("<players>", names);
 
                 sb.AppendLine(activity);
             }
@@ -250,9 +250,9 @@ public static class BeaconManager
                         .Select(id => GameData.Instance?.GetPlayerById(id)?.PlayerName ?? MiraLocaleManager.Get("DivaniMods.Common.Unknown")));
                     var bodyActivity = MiraLocaleManager
                         .Get("DivaniMods.Role.Sentinel.Report.Bodies")
-                        .Replace("[beacon]", bodyLabel.ToString())
-                        .Replace("[room]", beacon.RoomName)
-                        .Replace("[players]", names);
+                        .Replace("<beacon>", bodyLabel.ToString())
+                        .Replace("<room>", beacon.RoomName)
+                        .Replace("<players>", names);
 
                     bodySb.AppendLine(bodyActivity);
                 }

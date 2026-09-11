@@ -59,7 +59,7 @@ public static class ClericCleanseExtraEffectsPatch
         {
             var text = MiraLocaleManager
                 .Get("DivaniMods.Role.Frag.Notification.DefusedByCleric")
-                .Replace("[clericColor]", clericHex);
+                .Replace("<clericColor>", clericHex);
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b>{text}</b>",
@@ -71,7 +71,7 @@ public static class ClericCleanseExtraEffectsPatch
         {
             var text = MiraLocaleManager
                 .Get("DivaniMods.Role.Frag.Notification.DefusedByYou")
-                .Replace("[fragColor]", fragHex);
+                .Replace("<fragColor>", fragHex);
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b>{text}</b>",

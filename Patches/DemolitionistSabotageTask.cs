@@ -34,8 +34,8 @@ public sealed class DemolitionistSabotageTask(nint cppPtr) : SabotageTask(cppPtr
 
         var text = MiraLocaleManager
             .Get("DivaniMods.Role.Demolitionist.Task.SabotageActive")
-            .Replace("[location]", location)
-            .Replace("[seconds]", seconds.ToString());
+            .Replace("<location>", location)
+            .Replace("<seconds>", seconds.ToString());
 
         sb.AppendLine(
             $"<color=#{hex}>{text}</color>");

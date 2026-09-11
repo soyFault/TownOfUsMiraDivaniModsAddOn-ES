@@ -48,8 +48,8 @@ public class ArmoredModifier : UniversalGameModifier, IWikiDiscoverable
             : "DivaniMods.Modifier.Armored.Description.Plural";
 
         return MiraLocaleManager.Get(descriptionKey)
-            .Replace("[max]", max.ToString())
-            .Replace("[survived]", DisplayedAttacksSurvived.ToString());
+            .Replace("<max>", max.ToString())
+            .Replace("<survived>", DisplayedAttacksSurvived.ToString());
     }
 
     public string GetAdvancedDescription() => GetDescription() + MiscUtils.AppendOptionsText(GetType());

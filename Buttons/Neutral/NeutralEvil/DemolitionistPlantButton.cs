@@ -260,7 +260,7 @@ public class DemolitionistPlantButton : TownOfUsButton
         var colorHex = ColorUtility.ToHtmlStringRGB(DemolitionistRole.DemolitionistColor);
         var armingText = MiraLocaleManager
             .Get("DivaniMods.Role.Demolitionist.Notification.Arming")
-            .Replace("[seconds]", delay.ToString("0"));
+            .Replace("<seconds>", delay.ToString("0"));
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#{colorHex}>{armingText}</color></b>",

@@ -58,7 +58,7 @@ public sealed class BetrayerRevealedModifier : BaseModifier
 
         if (local.PlayerId == Player.PlayerId)
         {
-            var message = MiraLocaleManager.Get("DivaniMods.Modifier.BetrayerRevealed.Notification.Revealed").Replace("[color]", ColorTag);
+            var message = MiraLocaleManager.Get("DivaniMods.Modifier.BetrayerRevealed.Notification.Revealed").Replace("<color>", ColorTag);
 
             Notify($"<b>{message}</b>");
             return;
@@ -67,8 +67,8 @@ public sealed class BetrayerRevealedModifier : BaseModifier
         if (local.IsImpostorAligned() && !local.HasModifier<BetrayerModifier>() && !local.HasDied())
         {
             var message = MiraLocaleManager.Get("DivaniMods.Modifier.BetrayerRevealed.Notification.Impostors")
-                .Replace("[player]", Player.Data.PlayerName)
-                .Replace("[color]", ColorTag);
+                .Replace("<player>", Player.Data.PlayerName)
+                .Replace("<color>", ColorTag);
 
             Notify($"<b>{message}</b>");
         }

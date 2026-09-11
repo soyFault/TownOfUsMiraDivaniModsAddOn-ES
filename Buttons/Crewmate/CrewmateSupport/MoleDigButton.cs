@@ -93,7 +93,7 @@ public sealed class MoleDigButton : TownOfUsRoleButton<MoleRole>
             var hex = ColorUtility.ToHtmlStringRGB(MoleRole.MoleColor);
             var notificationText = MiraLocaleManager
                 .Get("DivaniMods.Role.Mole.Notification.VentActivatesNextMeeting")
-                .Replace("[room]", roomName);
+                .Replace("<room>", roomName);
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#{hex}>{notificationText}</color></b>",
                 Color.white,

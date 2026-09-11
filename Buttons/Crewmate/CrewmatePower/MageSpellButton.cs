@@ -157,7 +157,7 @@ public sealed class MageSpellButton : TownOfUsRoleButton<MageRole, PlayerControl
 
                 var illusionText = MiraLocaleManager
                     .Get("DivaniMods.Role.Mage.Notification.CastIllusion")
-                    .Replace("[player]", Target.Data.PlayerName);
+                    .Replace("<player>", Target.Data.PlayerName);
 
                 MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                     $"<b><color=#1586a2>{illusionText}</color></b>",

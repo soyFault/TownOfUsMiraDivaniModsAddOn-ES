@@ -394,7 +394,7 @@ public static class DuelManager
 
             var text = MiraLocaleManager
                 .Get(key)
-                .Replace("[seconds]", seconds.ToString());
+                .Replace("<seconds>", seconds.ToString());
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#{hex}>{text}</color></b>",

@@ -31,7 +31,7 @@ public sealed class BearTrapModifier : TouGameModifier, IWikiDiscoverable
     {
         var duration = OptionGroupSingleton<BearTrapOptions>.Instance.FreezeDuration.Value;
         return MiraLocaleManager.Get("DivaniMods.Modifier.BearTrap.Description")
-            .Replace("[seconds]", duration.ToString("0"));
+            .Replace("<seconds>", duration.ToString("0"));
     }
 
     public string GetAdvancedDescription() => GetDescription() + MiscUtils.AppendOptionsText(GetType());

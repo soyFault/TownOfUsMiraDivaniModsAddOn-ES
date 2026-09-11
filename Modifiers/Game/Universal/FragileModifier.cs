@@ -32,7 +32,7 @@ public class FragileModifier : UniversalGameModifier, IWikiDiscoverable
         var chance = OptionGroupSingleton<FragileOptions>.Instance.ChanceToBreak.Value;
 
         return MiraLocaleManager.Get("DivaniMods.Modifier.Fragile.Description")
-            .Replace("[chance]", chance.ToString("0"));
+            .Replace("<chance>", chance.ToString("0"));
     }
 
     public string GetAdvancedDescription() => GetDescription() + MiscUtils.AppendOptionsText(GetType());

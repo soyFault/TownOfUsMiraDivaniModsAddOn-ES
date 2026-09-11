@@ -173,7 +173,7 @@ public static class DuelistEvents
         var text = duelist.AmOwner
             ? MiraLocaleManager.Get("DivaniMods.Role.Duelist.Notification.YouWon")
             : MiraLocaleManager.Get("DivaniMods.Role.Duelist.Notification.PlayerWon")
-                .Replace("[player]", duelist.Data.PlayerName);
+                .Replace("<player>", duelist.Data.PlayerName);
 
         var notif = Helpers.CreateAndShowNotification(
             text, Color.white, new Vector3(0f, 1f, -20f), spr: DivaniAssets.DuelistIcon.LoadAsset());

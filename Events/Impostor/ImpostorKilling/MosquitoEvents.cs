@@ -54,7 +54,7 @@ public static class MosquitoEvents
             var colorHex = ColorUtility.ToHtmlStringRGB(Palette.ImpostorRed);
             var notificationText = MiraLocaleManager
                 .Get("DivaniMods.Role.Mosquito.Notification.Stung")
-                .Replace("[player]", evt.Target.Data.PlayerName);
+                .Replace("<player>", evt.Target.Data.PlayerName);
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#{colorHex}>{notificationText}</color></b>",

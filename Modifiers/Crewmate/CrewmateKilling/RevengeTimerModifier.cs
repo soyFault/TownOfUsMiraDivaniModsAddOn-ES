@@ -34,7 +34,7 @@ public sealed class RevengeTimerModifier(float time) : TimedModifier
             _ => Color.red
         };
         var timeText = MiraLocaleManager.Get("DivaniMods.Modifier.Revenge.Time")
-            .Replace("[seconds]", roundedTime.ToString());
+            .Replace("<seconds>", roundedTime.ToString());
 
         return $"{textColor.ToTextColor()}<size=80%>{timeText}</size></color>";
     }
@@ -55,10 +55,10 @@ public sealed class RevengeTimerModifier(float time) : TimedModifier
         revengeText = revengeUI.transform.FindChild("ScatterCanvas").FindChild("ScatterText").gameObject
             .GetComponent<TMPro.TextMeshProUGUI>();
         var timeText = MiraLocaleManager.Get("DivaniMods.Modifier.Revenge.Time")
-            .Replace("[seconds]", Duration.ToString("0"));
+            .Replace("<seconds>", Duration.ToString("0"));
 
         revengeText.text = MiraLocaleManager.Get("DivaniMods.Modifier.Revenge.Timer")
-            .Replace("[time]", timeText);
+            .Replace("<time>", timeText);
         revengeText.gameObject.SetActive(false);
 
         revengeBar = revengeUI.transform.FindChild("ScatterCanvas").FindChild("ScatterBar").gameObject
@@ -104,10 +104,10 @@ public sealed class RevengeTimerModifier(float time) : TimedModifier
         if (revengeText != null)
         {
             var timeText = MiraLocaleManager.Get("DivaniMods.Modifier.Revenge.Time")
-                .Replace("[seconds]", roundedTime.ToString());
+                .Replace("<seconds>", roundedTime.ToString());
 
             revengeText.text = MiraLocaleManager.Get("DivaniMods.Modifier.Revenge.Timer")
-                .Replace("[time]", $"{textColor.ToTextColor()}{timeText}</color>");
+                .Replace("<time>", $"{textColor.ToTextColor()}{timeText}</color>");
         }
 
         if (revengeBar != null)

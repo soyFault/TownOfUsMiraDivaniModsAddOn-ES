@@ -50,7 +50,7 @@ public static class BearTrapPatch
         {
             var notificationText = MiraLocaleManager
                 .Get("DivaniMods.Modifier.BearTrap.Notification.Caught")
-                .Replace("[seconds]", duration.ToString("0"));
+                .Replace("<seconds>", duration.ToString("0"));
 
             Helpers.CreateAndShowNotification(
                 $"<b><color=#A5632D>{notificationText}</color></b>",

@@ -45,7 +45,7 @@ public class ShuffleModifier : UniversalGameModifier, IWikiDiscoverable, IButton
         set => _usesRemaining = value;
     }
     
-    public override string GetDescription() => MiraLocaleManager.Get("DivaniMods.Modifier.Shuffle.Description").Replace("[uses]", UsesRemaining.ToString());
+    public override string GetDescription() => MiraLocaleManager.Get("DivaniMods.Modifier.Shuffle.Description").Replace("<uses>", UsesRemaining.ToString());
 
 public string GetAdvancedDescription() =>
         MiraLocaleManager.Get("DivaniMods.Modifier.Shuffle.AdvancedDescription")

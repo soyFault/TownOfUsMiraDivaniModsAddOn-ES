@@ -101,7 +101,7 @@ public static class RetributionistEvents
 
         var notificationText = MiraLocaleManager
             .Get("DivaniMods.Role.Retributionist.Notification.FirstDeathShieldBlocked")
-            .Replace("[player]", killer.Data.PlayerName);
+            .Replace("<player>", killer.Data.PlayerName);
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#{hex}>{notificationText}</color></b>",

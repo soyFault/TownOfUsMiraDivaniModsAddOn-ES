@@ -27,7 +27,7 @@ public static class CouncillorMeetingTimerPatch
         var total = 1 + CouncillorEvents.GetExtraVotes(local.PlayerId);
         var text = MiraLocaleManager
             .Get("DivaniMods.Role.Councillor.Meeting.CurrentVotes")
-            .Replace("[votes]", total.ToString());
+            .Replace("<votes>", total.ToString());
 
         __instance.TimerText.text += $"<color=#FFFFFF>\n{text}</color>";
     }

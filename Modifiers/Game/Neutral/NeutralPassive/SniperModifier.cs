@@ -34,7 +34,7 @@ public sealed class SniperModifier : TouGameModifier, IWikiDiscoverable
     {
         var multiplier = OptionGroupSingleton<SniperOptions>.Instance.KillDistanceMultiplier.Value;
         return MiraLocaleManager.Get("DivaniMods.Modifier.Sniper.Description")
-            .Replace("[multiplier]", multiplier.ToString("0.0"));
+            .Replace("<multiplier>", multiplier.ToString("0.0"));
     }
 
     public string GetAdvancedDescription() => GetDescription() + MiscUtils.AppendOptionsText(GetType());

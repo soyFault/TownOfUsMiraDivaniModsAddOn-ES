@@ -264,7 +264,7 @@ public static class DemolitionistSabotageState
 
         var notificationText = MiraLocaleManager
             .Get("DivaniMods.Role.Demolitionist.Notification.SabotageActive")
-            .Replace("[location]", PlantedLocationName);
+            .Replace("<location>", PlantedLocationName);
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#{colorHex}>{notificationText}</color></b>",
@@ -295,7 +295,7 @@ public static class DemolitionistSabotageState
 
         var notificationText = MiraLocaleManager
             .Get("DivaniMods.Role.Demolitionist.Notification.SabotageDefused")
-            .Replace("[location]", location);
+            .Replace("<location>", location);
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#{colorHex}>{notificationText}</color></b>",
@@ -342,9 +342,9 @@ public static class DemolitionistSabotageState
 
         var notificationText = MiraLocaleManager
             .Get(key)
-            .Replace("[location]", location)
-            .Replace("[count]", SuccessfulSabotages.ToString())
-            .Replace("[needed]", needed.ToString());
+            .Replace("<location>", location)
+            .Replace("<count>", SuccessfulSabotages.ToString())
+            .Replace("<needed>", needed.ToString());
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#{colorHex}>{notificationText}</color></b>",

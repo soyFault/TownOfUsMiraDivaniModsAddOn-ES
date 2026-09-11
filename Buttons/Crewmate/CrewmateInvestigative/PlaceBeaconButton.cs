@@ -129,8 +129,8 @@ public class PlaceBeaconButton : TownOfUsButton
         char label = (char)('A' + beaconNum - 1);
         var messageText = MiraLocaleManager
             .Get("DivaniMods.Role.Sentinel.Notification.BeaconPlaced")
-            .Replace("[beacon]", label.ToString())
-            .Replace("[room]", roomName);
+            .Replace("<beacon>", label.ToString())
+            .Replace("<room>", roomName);
 
         var message = $"<b><color=#{colorHex}>{messageText}</color></b>";
 

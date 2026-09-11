@@ -89,7 +89,7 @@ public static class MageEnergize
 
         var text = MiraLocaleManager
             .Get(key)
-            .Replace("[ability]", ability);
+            .Replace("<ability>", ability);
 
         var msg = $"<b><color=#1586a2>{text}</color></b>";
 

@@ -192,7 +192,7 @@ public static class DuelistRpc
         {
             var duelStartedText = MiraLocaleManager
                 .Get("DivaniMods.Role.Duelist.Notification.DuelStarted")
-                .Replace("[player]", target.Data.PlayerName);
+                .Replace("<player>", target.Data.PlayerName);
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#{hex}>{duelStartedText}</color></b>",
                 Color.white, pos, spr: icon);

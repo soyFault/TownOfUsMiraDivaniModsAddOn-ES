@@ -71,7 +71,7 @@ public static class CouncillorEvents
                 : "DivaniMods.Role.Councillor.Notification.KilledKnightedPlayer";
         var notificationText = MiraLocaleManager
                 .Get(key)
-                .Replace("[votes]", votesGained.ToString());
+                .Replace("<votes>", votesGained.ToString());
 
         var colorHex = ColorUtility.ToHtmlStringRGB(Palette.ImpostorRed);
 

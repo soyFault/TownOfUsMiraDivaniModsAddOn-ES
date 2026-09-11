@@ -188,8 +188,8 @@ public class PickpocketButton : TownOfUsButton
         var delay = EffectDuration;
 
         var pickpocketingText = MiraLocaleManager.Get("DivaniMods.Role.Thief.Notification.Pickpocketing")
-            .Replace("[player]", targetName)
-            .Replace("[seconds]", delay.ToString("0.#"));
+            .Replace("<player>", targetName)
+            .Replace("<seconds>", delay.ToString("0.#"));
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#804D1A>{pickpocketingText}</color></b>",
@@ -722,7 +722,7 @@ public class PickpocketButton : TownOfUsButton
                     bundledTypeId != 0
                         ? "DivaniMods.Role.Thief.Notification.ModifiersStolenFromYou"
                         : "DivaniMods.Role.Thief.Notification.ModifierStolenFromYou")
-                .Replace("[modifier]", displayName);
+                .Replace("<modifier>", displayName);
 
             MiraAPI.Utilities.Helpers.CreateAndShowNotification(
                 $"<b><color=#804D1A>{stolenFromYouText}</color></b>",

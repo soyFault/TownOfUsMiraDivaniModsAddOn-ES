@@ -102,7 +102,7 @@ public class PlaceDomeButton : TownOfUsButton
         var delay = EffectDuration;
         var placingText = MiraLocaleManager
             .Get("DivaniMods.Role.Domesmith.Notification.PlacingDome")
-            .Replace("[seconds]", delay.ToString("0.#"));
+            .Replace("<seconds>", delay.ToString("0.#"));
 
         MiraAPI.Utilities.Helpers.CreateAndShowNotification(
             $"<b><color=#{colorHex}>{placingText}</color></b>",
