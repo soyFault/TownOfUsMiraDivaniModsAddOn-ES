@@ -844,7 +844,7 @@
     <string name="DivaniMods.Modifier.TacticalInsertion.AdvancedDescription">Marca tu posición actual. Tras la próxima reunión, reaparecerás en el punto marcado en vez del área de reunión.</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability">Inserción Táctica</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Description">Marca tu posición para reaparecer ahí tras la próxima reunión.</string>
-    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">Reapareciste en tu Inserción Táctica.</string>
+    <string name="DivaniMods.Modifier.TacticalInsertion.Notification.Spawned">Apareciste en tu Inserción Táctica.</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Ability.Mark">Inserción Táctica</string>
     <string name="DivaniMods.Modifier.TacticalInsertion.Notification.PositionMarked">Posición marcada</string>
     <!-- Opciones de Inserción Táctica -->
